@@ -40,13 +40,15 @@ not in this table.
 
 ## Posting schedule
 
-Proposed for a new account (quality over volume); confirm before the first batch.
+Thomas, 2026-10-25: 2 to 3 posts a day at the times people are most active. No time makes a post go viral on
+its own; the first hour's watch time and shares decide reach. After two weeks, move the slots to the hours each
+app's analytics show the followers are online. Never two TikToks within two hours of each other.
 
 | Field | Value |
 |---|---|
 | Timezone | `America/New_York` |
-| Instagram slots per day | `12:00 PM, 7:00 PM` |
-| TikTok slots per day | `6:30 PM` |
+| Instagram slots per day | `11:30 AM, 7:30 PM` |
+| TikTok slots per day | `12:30 PM, 6:30 PM, 9:00 PM` |
 
 ## Topic scope
 
@@ -80,7 +82,7 @@ Written once, reused verbatim on every post. Proposed; confirm before the first 
 |---|---|
 | Caption brand line (second to last line of every caption) | `Sidedoor finds people at the companies you want and gets their work email, with a draft built on what you have in common.` |
 | Caption CTA (final line of every caption) | `Start free at sidedoorjobs.app (link in bio).` |
-| On-screen series label (top of every Reel and slide) | `THE JOB SEARCH, HONESTLY` |
-| Footer / watermark (bottom of every Reel and slide) | `sidedoorjobs.app` |
-| TikTok slide 1 swipe prompt | `swipe →` |
-| TikTok closing slide text (series label `SIDEDOOR`) | `Sidedoor finds people at the companies you want, gets their work email and drafts the note. You press send.` |
+| TikTok closing slide text | `Sidedoor finds people at the companies you want, gets their work email and drafts the note. You press send.` |
+
+No on-screen label, watermark or swipe prompt: the native look (2026-10-25, v2) is text the way people type it
+in the app. The handle already shows in the app around every post.

@@ -71,9 +71,11 @@ def main():
     parser.add_argument("--question", required=True, help="On-screen numbered statement whose advice appears in the caption (legacy option name, layer 2)")
     parser.add_argument(
         "--brand-tag",
-        required=True,
-        help="Series label for layer 1, e.g. THE JOB SEARCH, HONESTLY (see instagram/style_guide.md)",
+        default="",
+        help="Unused by the Sidedoor native look (no label box); kept for compatibility",
     )
+    parser.add_argument("--text-y", type=int, default=None,
+                        help="Moves the on-screen line up or down (top edge, in pixels of the 1080x1920 frame) so it never covers a face")
     parser.add_argument("--highlight-color", default=None,
                          help="Overrides brand_tag + technical_question background_color (the 9-color rotation) -- leaves text color/geometry untouched")
     parser.add_argument("--out", required=True, help="Output .mp4 path")
@@ -92,6 +94,8 @@ def main():
     if args.highlight_color:
         # Sidedoor keeps one fixed look; an override only recolours the series label.
         style_overrides = {"brand_tag": {"background_color": args.highlight_color}}
+    if args.text_y is not None:
+        style_overrides = {**(style_overrides or {}), "technical_question": {"y": args.text_y}}
 
     overlay = render_slide(style_path, str(blank_path), {
         "brand_tag": args.brand_tag,
@@ -101,12 +105,13 @@ def main():
     overlay_path = out_path.parent / f"_overlay_{out_path.stem}.png"
     overlay.save(overlay_path)
 
+    # Sidedoor: fill the frame and crop (landscape stock is cropped to 9:16, never stretched).
     cmd = [
         ffmpeg, "-y",
         "-i", str(clip_path),
         "-i", str(overlay_path),
         "-f", "lavfi", "-t", str(duration), "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
-        "-filter_complex", "[0:v]scale=1080:1920[bg];[bg][1:v]overlay=0:0[v]",
+        "-filter_complex", "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg];[bg][1:v]overlay=0:0[v]",
         "-map", "[v]", "-map", "2:a",
         "-c:v", "libx264", "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart",
         str(out_path), "-loglevel", "error",

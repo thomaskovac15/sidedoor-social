@@ -1,23 +1,23 @@
 # TikTok Style Guide (Sidedoor)
 
-"Sidedoor overrides" at the top of `AGENTS.md` win over anything here. Audience, voices and topic mix are the
-same as in `instagram/style_guide.md`.
+"Sidedoor overrides" at the top of `AGENTS.md` win over anything here. Audience, voices, topic mix and the
+on-screen line rules are the same as in `instagram/style_guide.md`.
 
 ## Carousel structure (4 to 6 slides)
 
-1. **Slide 1, the hook** (`styles/tiktok_question_overlay.json`, on a still from a clip): series label
-   `THE JOB SEARCH, HONESTLY`, a POV or question statement (same rules as the Instagram statement), and
-   `swipe →`.
-2. **Middle slides, one point each** (2 to 4 of them), on photos from `photos/rotation/`:
-   - `styles/tiktok_mistake_boxed.json` (coral heading) for what goes wrong: cold applying, silence, wasted money.
-   - `styles/tiktok_teaching_boxed.json` (mint heading) for what works: referrals, alumni, a short specific note.
-   - Heading at most 2 lines; body at most 3 short sentences. The job seeker's voice. Never mentions Sidedoor.
-   - Every number from `knowledge/job-market-facts.md`, with the source named in the body ("in a Lever study of
-     4M+ candidates").
-3. **Last slide, Sidedoor speaking** (`styles/tiktok_cta_boxed.json`): series label `SIDEDOOR` and the fixed
-   closing text from `brand.md`. The only slide that mentions Sidedoor.
+1. **Slide 1, the hook** (`styles/tiktok_question_overlay.json`, on a still from a clip of a real person): one
+   POV line, typed-in-the-app style.
+2. **Middle slides, one point each** (2 to 4), on photos from `photos/rotation/`, using
+   `styles/tiktok_mistake_boxed.json` for what goes wrong and `styles/tiktok_teaching_boxed.json` for what works
+   (they look the same on purpose):
+   - `heading`: one bold line, at most 2 lines on screen.
+   - `body`: at most 2 short sentences. The job seeker's voice. Never mentions Sidedoor.
+   - A number only from `knowledge/job-market-facts.md` (status `confirmed`), with the source named in the body
+     ("in a study of 4M+ candidates").
+3. **Last slide, Sidedoor speaking** (`styles/tiktok_cta_boxed.json`), ideally over a still of the Sidedoor
+   screen: the fixed closing text from `brand.md`. The only slide that mentions Sidedoor.
 
-Every slide except slide 1 carries the `sidedoorjobs.app` watermark.
+No labels, watermarks or swipe prompts on any slide; TikTok shows the dots and the handle.
 
 ## Caption
 
@@ -26,10 +26,10 @@ from the Instagram list. No links.
 
 ## Hook patterns
 
-- "POV: …" a moment every job seeker knows (backed by a story in `knowledge/your-stories.md` or a fact).
-- "Why your applications go nowhere, and what works instead."
-- "Things nobody tells you about applying online."
-- "If you've sent 100 applications and heard nothing, read this." (A "you", never a claimed personal count.)
+- "POV: …" a moment every job seeker knows (from `knowledge/your-stories.md` or a fact).
+- "why your applications go nowhere (and what works instead)"
+- "things nobody tells you about applying online"
+- "if you've sent 100 applications and heard nothing, read this" (a "you", never a claimed personal count)
 
 ## Examples
 

@@ -28,7 +28,7 @@ def main():
 
     font = ImageFont.load_default()
     for candidate in (
-        Path(__file__).resolve().parent.parent / "fonts" / "Geist[wght].ttf",
+        Path(__file__).resolve().parent.parent / "fonts" / "TikTokSans[opsz,slnt,wdth,wght].ttf",
         "/System/Library/Fonts/Supplemental/Arial.ttf",
     ):
         try:

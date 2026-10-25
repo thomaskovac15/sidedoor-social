@@ -28,5 +28,6 @@ styles and playbook are the pipeline.
 ## Credits
 
 The pipeline began as an MIT-licensed template; its licence is kept in `LICENSE` as that licence requires. The
-look (styles, Geist font, colours) and all content are Sidedoor's. Geist is under the SIL Open Font License
-(`fonts/Geist-OFL.txt`).
+look and all content are Sidedoor's. TikTok Sans is under the SIL Open Font License (`fonts/TikTokSans-OFL.txt`).
+Stock footage comes from licences that allow social media marketing use (Mixkit's Stock Video Free License;
+Pexels): no attribution needed, never used to suggest the person shown uses or recommends Sidedoor.

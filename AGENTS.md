@@ -21,18 +21,21 @@ section wins.
    Sidedoor:** the TikTok closing slide and the caption's final lines, in the brand's own voice. No made-up
    person ever says Sidedoor helped them. That would be a fake testimonial, which the FTC's 2024 rule bans
    (16 CFR Part 465), even without a hiring claim.
-2. **No credibility-led titles.** `brand_tag` is a fixed series label (see `instagram/style_guide.md`), not a
-   claim about who is speaking. Never invent a person, employer, title or experience.
-3. **One fixed look.** Geist, Sidedoor colours (ink #0b2b2a, teal #0e6b66, mint #bfe3df), square corners,
-   left-aligned cards, exactly as in `styles/`. There is **no per-post colour rotation**. Ignore every note in
-   `playbook.md` about the 9-colour rotation, rounded highlight corners, Montserrat or `--highlight-color`.
+2. **No credibility-led titles and no on-screen label.** Never invent a person, employer, title or experience.
+3. **Native look, not a template.** Text the way people type it in the app: TikTok Sans, white with a dark
+   outline, centred, no cards, no labels, no watermark, exactly as in `styles/`. Realism comes from the footage:
+   real people in real places (see `clips/README.md`). There is **no per-post colour rotation**. Ignore every note
+   in `playbook.md` about the 9-colour rotation, highlight boxes, Montserrat, `brand_tag`, `caption_below`,
+   `swipe_right`, watermarks or `--highlight-color`.
 4. **Both channels are active:** Instagram Reels and TikTok carousels. LinkedIn is not used.
 5. **Facts.** Every number must come from `knowledge/job-market-facts.md` with its source, quoted as the
    source states it. Sidedoor's prices and features come only from `knowledge/sidedoor.md`. Where a number
    must stay on one line (for example "1 in 152"), use an explicit line break (`
 `) in the text.
-6. **No AI-generated people or faces**, and no voice clones. The footage is real: screen recordings of
-   Sidedoor, b-roll, and licensed stock.
+6. **Real footage first.** Clips of real people: Thomas, friends, paid creators, or licensed stock (Pexels).
+   Never repost other creators' videos. AI-generated people or voices only if Thomas switches them on in
+   `brand.md`, and then always with each app's AI label turned on (TikTok "AI-generated content",
+   Instagram "AI info"), voicing the job seeker's point of view only.
 7. **Never contact the template's upstream:** no forks, stars, issues or pull requests. Pushing to `upstream` is
    disabled. Don't use referral links from the template.
 

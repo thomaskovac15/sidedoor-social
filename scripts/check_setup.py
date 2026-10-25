@@ -137,7 +137,7 @@ else:
           "still the shipped placeholder" if "Empty out of the box" in bank else "")
 
 # --- fonts ----------------------------------------------------------------
-fonts = ["Geist[wght].ttf"]  # Sidedoor: one variable font for every weight
+fonts = ["TikTokSans[opsz,slnt,wdth,wght].ttf"]  # Sidedoor: one variable font for every weight
 missing_fonts = [f for f in fonts if not (ROOT / "fonts" / f).exists()]
 check("bundled fonts present", not missing_fonts,
       f"missing: {', '.join(missing_fonts)}" if missing_fonts else "")

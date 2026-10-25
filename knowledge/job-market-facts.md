@@ -42,3 +42,7 @@ changes the status.
   and writes it here with the date. Then posts may say "LinkedIn Premium Career costs $X a month (as of <month
   year>)" and compare it with Sidedoor's prices from `knowledge/sidedoor.md`. Never more than the price and
   features LinkedIn publishes; no logo.
+- Thomas's research (2026-10-25): "$50+ a month, usually more than 50". Reported US list prices are Career
+  $39.99 and Business $69.99 a month (TemperStack, March 2026), so the plan matters. Before using a number, add
+  a screenshot or link of LinkedIn's own page showing the plan and price, then set this section to `confirmed`
+  with the exact wording, e.g. "LinkedIn Premium Business: $69.99 a month (Oct 2026)".
