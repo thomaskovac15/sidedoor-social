@@ -56,7 +56,7 @@ app's analytics show the followers are online. Never two TikToks within two hour
 
 - How hard the job search is now: cold applying, silence, rejections, how many people apply for each job.
 - Referrals and connections versus cold applications, with sourced numbers.
-- What the search costs, LinkedIn Premium included (only with a confirmed, dated price).
+- What the search costs, LinkedIn Premium included (wording from knowledge/job-market-facts.md section 5).
 - How to reach people at a company: alumni, former colleagues, a short note built on common ground.
 - What Sidedoor does, in Sidedoor's own voice, from `knowledge/sidedoor.md`.
 

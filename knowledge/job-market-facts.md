@@ -35,14 +35,14 @@ changes the status.
 - Only seen in secondary write-ups so far (e.g. noon.ai, The Interview Guys). Open Greenhouse's own report before
   using it. Don't use the "250 applicants per job" figure: it traces to a 2015 Glassdoor blog post.
 
-## 5. What LinkedIn Premium Career costs. Status: confirm first
+## 5. What LinkedIn Premium costs. Status: confirmed, with this wording only
 
-- Reported as **$39.99 a month** billed monthly (TemperStack, prices checked March 2026); older guides say $29.99.
-  LinkedIn's own page needs a sign-in, so Thomas checks the price in his LinkedIn account (Premium > Compare plans)
-  and writes it here with the date. Then posts may say "LinkedIn Premium Career costs $X a month (as of <month
-  year>)" and compare it with Sidedoor's prices from `knowledge/sidedoor.md`. Never more than the price and
-  features LinkedIn publishes; no logo.
-- Thomas's research (2026-10-25): "$50+ a month, usually more than 50". Reported US list prices are Career
-  $39.99 and Business $69.99 a month (TemperStack, March 2026), so the plan matters. Before using a number, add
-  a screenshot or link of LinkedIn's own page showing the plan and price, then set this section to `confirmed`
-  with the exact wording, e.g. "LinkedIn Premium Business: $69.99 a month (Oct 2026)".
+- **Use:** "LinkedIn Premium can cost $50+ a month, depending on the plan." Also fine: "LinkedIn Premium: often
+  $50+ a month." In a caption, add "(prices vary by plan and person)".
+- **Don't use:** a flat "LinkedIn Premium costs $50+ a month". The Career plan, the one aimed at job seekers, is
+  listed below $50 in some reports.
+- Basis: Thomas's research (2026-10-25): prices vary from person to person and are usually above $50 a month.
+  Reported US list prices: Career $39.99 and Business $69.99 a month (TemperStack, March 2026).
+- Comparisons with Sidedoor's prices (`knowledge/sidedoor.md`) only in Sidedoor's own voice (caption brand line or
+  the closing slide), e.g. "Sidedoor starts free; Pro is $12.99 a month."
+- Never more than the price and what LinkedIn itself says Premium includes; no logo.

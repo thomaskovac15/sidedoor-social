@@ -18,6 +18,20 @@
   (`knowledge/your-stories.md` and sourced numbers), 3 how to reach people at a company, 2 what the search costs.
   Vary the angle; don't run the same pillar twice in a row.
 
+## Formats and the weekly mix
+
+Rotate formats so the feed never looks like one template. Per week, across both apps (about 35 posts):
+
+| Format | Where | How | Share |
+|---|---|---|---|
+| **One-line POV Reel** | Instagram, then the same video on TikTok | `build_ig_reel.py --question` | about 35% |
+| **Multi-beat Reel**: the line changes 2 to 4 times (setup, turn, payoff) | Instagram, then TikTok | `build_ig_reel.py --beat … --beat …` (2.5 s a beat at least) | about 25% |
+| **Carousel**: hook, 2 to 4 points, Sidedoor's closing slide | TikTok photo post, and the same slides as an Instagram carousel | `generate_slides.py` (see `tiktok/style_guide.md`) | about 30% |
+| **Talking to camera** (a real person; their own sound) | both | when such clips exist in `clips/` (see `clips/README.md`) | the rest, growing |
+
+A video made for Instagram also goes to TikTok (a different day or slot), and a TikTok carousel also goes to
+Instagram as a carousel. Different clip and hook each time; never the same clip twice in one day.
+
 ## Reel format: POV over real footage
 
 1. A clip from `clips/` plays full screen: a real person somewhere ordinary (home, coffee shop, a walk, a desk).
@@ -88,5 +102,5 @@ Every entry must be backed by `knowledge/`. Add to it as topics prove out.
 4. `nobody tells you the people\nwho can refer you\nwent to your school`
    Backed by `knowledge/sidedoor.md` (search by school or past employer). Caption: how to find alumni at a
    company and what a short note looks like.
-5. `POV: you're paying for LinkedIn\nPremium and still hearing nothing`
-   Only after `knowledge/job-market-facts.md` section 5 is confirmed. Caption: the confirmed price, dated.
+5. `POV: you're paying $50+ a month\nfor LinkedIn Premium\nand still hearing nothing`
+   Source: `knowledge/job-market-facts.md` section 5 (use its wording; add "prices vary by plan" in the caption).

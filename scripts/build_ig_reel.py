@@ -68,7 +68,9 @@ def get_duration(clip_path: Path, ffmpeg: str) -> float:
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--clip", required=True, help="Filename inside clips/")
-    parser.add_argument("--question", required=True, help="On-screen numbered statement whose advice appears in the caption (legacy option name, layer 2)")
+    parser.add_argument("--question", default=None, help="The on-screen line, held for the whole clip (legacy option name)")
+    parser.add_argument("--beat", action="append", default=None,
+                        help="Multi-beat Reel (Sidedoor): give 2 to 4 --beat lines instead of --question; each is shown for an equal part of the clip, in order")
     parser.add_argument(
         "--brand-tag",
         default="",
@@ -80,6 +82,11 @@ def main():
                          help="Overrides brand_tag + technical_question background_color (the 9-color rotation) -- leaves text color/geometry untouched")
     parser.add_argument("--out", required=True, help="Output .mp4 path")
     args = parser.parse_args()
+    lines = args.beat if args.beat else ([args.question] if args.question else [])
+    if not lines:
+        parser.error("give --question, or 2 to 4 --beat lines")
+    if args.beat and not 2 <= len(args.beat) <= 4:
+        parser.error("a multi-beat Reel takes 2 to 4 --beat lines")
 
     clip_path = PROJECT_ROOT / "clips" / args.clip
     style_path = PROJECT_ROOT / "styles" / "ig_question_overlay.json"
@@ -97,29 +104,48 @@ def main():
     if args.text_y is not None:
         style_overrides = {**(style_overrides or {}), "technical_question": {"y": args.text_y}}
 
-    overlay = render_slide(style_path, str(blank_path), {
-        "brand_tag": args.brand_tag,
-        "technical_question": args.question,
-        "caption_below": DEFAULT_CAPTION_BELOW,
-    }, style_overrides)
-    overlay_path = out_path.parent / f"_overlay_{out_path.stem}.png"
-    overlay.save(overlay_path)
+    if len(lines) > 1 and duration < 2.5 * len(lines):
+        raise SystemExit(f"clip is {duration:.1f}s: a {len(lines)}-beat Reel needs at least {2.5 * len(lines):.0f}s (2.5s a beat)")
 
-    # Sidedoor: fill the frame and crop (landscape stock is cropped to 9:16, never stretched).
+    overlay_paths = []
+    for index, line in enumerate(lines):
+        overlay = render_slide(style_path, str(blank_path), {
+            "brand_tag": args.brand_tag,
+            "technical_question": line,
+            "caption_below": DEFAULT_CAPTION_BELOW,
+        }, style_overrides)
+        overlay_path = out_path.parent / f"_overlay_{out_path.stem}_{index}.png"
+        overlay.save(overlay_path)
+        overlay_paths.append(overlay_path)
+
+    # Sidedoor: fill the frame and crop (landscape stock is cropped to 9:16, never stretched). With several beats, each
+    # overlay is switched on for its share of the clip; the last one stays to the end.
+    step = duration / len(lines)
+    chain = ["[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[v0]"]
+    for index in range(len(lines)):
+        if len(lines) == 1:
+            enable = ""
+        elif index == len(lines) - 1:
+            enable = f":enable='gte(t,{index * step:.3f})'"
+        else:
+            enable = f":enable='between(t,{index * step:.3f},{(index + 1) * step:.3f})'"
+        chain.append(f"[v{index}][{index + 1}:v]overlay=0:0{enable}[v{index + 1}]")
+    inputs = ["-i", str(clip_path)]
+    for overlay_path in overlay_paths:
+        inputs += ["-i", str(overlay_path)]
     cmd = [
-        ffmpeg, "-y",
-        "-i", str(clip_path),
-        "-i", str(overlay_path),
+        ffmpeg, "-y", *inputs,
         "-f", "lavfi", "-t", str(duration), "-i", "anullsrc=channel_layout=stereo:sample_rate=44100",
-        "-filter_complex", "[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg];[bg][1:v]overlay=0:0[v]",
-        "-map", "[v]", "-map", "2:a",
+        "-filter_complex", ";".join(chain),
+        "-map", f"[v{len(lines)}]", "-map", f"{len(lines) + 1}:a",
         "-c:v", "libx264", "-c:a", "aac", "-b:a", "128k", "-shortest", "-movflags", "+faststart",
         str(out_path), "-loglevel", "error",
     ]
     subprocess.run(cmd, check=True)
-    overlay_path.unlink()
+    for overlay_path in overlay_paths:
+        overlay_path.unlink()
 
-    print(f"wrote {out_path} (clip duration {duration:.2f}s, static overlay)")
+    print(f"wrote {out_path} (clip duration {duration:.2f}s, {'static overlay' if len(lines) == 1 else f'{len(lines)} beats of {step:.1f}s'})")
 
 
 if __name__ == "__main__":

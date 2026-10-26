@@ -1,0 +1,14 @@
+# Searches for scripts/fetch_stock.py --preset. One per line. Candid, ordinary, phone-shot looking; people at home,
+# in coffee shops, on a walk, at a desk. Avoid anything that looks like an ad or a staged office.
+person on laptop at home at night
+coffee shop laptop
+student studying in library
+walking city street
+person scrolling phone
+typing on laptop close up
+tired person at desk
+rainy window laptop
+commute train window
+person thinking looking out window
+young professional walking to work
+writing notes notebook desk

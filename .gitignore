@@ -15,3 +15,12 @@ scripts/__pycache__/
 .agents/
 .DS_Store
 Thumbs.db
+
+# Media is large and re-fetchable (clips/sources.json, photos/sources.json); keep it out of Git.
+clips/*.mp4
+clips/*.mov
+clips/*.m4v
+photos/rotation/*.jpg
+photos/rotation/*.jpeg
+photos/rotation/*.png
+*.part
