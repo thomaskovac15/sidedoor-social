@@ -27,13 +27,22 @@ changes the status.
 - **25%** of external hires come from employee referrals.
 - Source: CareerXroads, annual Source of Hire report (employer data). Used on sidedoorjobs.app; find the edition
   year before using it in a post.
+- Checked 2026-10-27: no edition found that says 25%. As reported by ERE: 27.3% (2008 survey), 27.5% (2010),
+  24.5% (2012), lower again in 2013. The newest editions weren't reachable. Until an edition with a year is
+  found, don't use it; the Lever and Greenhouse numbers cover the same point.
 
-## 4. How many people apply for one job. Status: confirm first (primary report)
+## 4. How many people apply for one job. Status: confirmed (primary report checked 2026-10-27)
 
-- About **244 applications per job** on average in 2025, roughly double 2022's 116, per Greenhouse's Hire
-  Standard report (March 2026, over 640 million applications).
-- Only seen in secondary write-ups so far (e.g. noon.ai, The Interview Guys). Open Greenhouse's own report before
-  using it. Don't use the "250 applicants per job" figure: it traces to a 2015 Glassdoor blog post.
+- **244 applications per job** on average in 2025, up from roughly 115 in 2022 (+111%).
+- Source: Greenhouse, "The Hire Standard: Greenhouse benchmark report", March 2026, North America. Its own words:
+  "The ratio of applications per job increased by 111% from roughly 115 applications per role in 2022 to 244 in
+  2025." Methodology: recruiting data from over 6,000 organizations using Greenhouse, 640M applications, 2022 to
+  2025. PDF:
+  https://cdn.prod.website-files.com/6668a687e71e2722fccb8357/69c6a67c710b821d52b0d5d3_Greenhouse_Benchmark_Report_March2026_NorthAmerica.pdf
+- Wording: "the average job got 244 applications in 2025 (Greenhouse data)". It counts applications, not unique
+  people. Greenhouse published a different figure (95 per job) from another dataset in October 2025, so always
+  name this report, never just "Greenhouse says".
+- Don't use the "250 applicants per job" figure: it traces to a 2015 Glassdoor blog post.
 
 ## 5. What LinkedIn Premium costs. Status: confirmed, with this wording only
 

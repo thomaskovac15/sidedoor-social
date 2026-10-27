@@ -1,0 +1,500 @@
+{
+  "_note": "Week of 2026-10-28 (Wed) to 2026-11-01 (Sun), inside the Postiz trial. Ten pieces, each on both apps: piece a = Instagram 11:30 AM then TikTok 6:30 PM; piece b = TikTok 12:30 PM then Instagram 7:30 PM. Slots in UTC (EDT until Nov 1, EST from Nov 1). Instagram captions get the brand line and CTA from brand.md appended; TikTok captions get the CTA.",
+  "pieces": [
+    {
+      "id": "wed-a",
+      "format": "reel",
+      "pillar": "how hard",
+      "clip": "pixabay-233390.mp4",
+      "lines": [
+        "POV: you applied everywhere\nand the only reply\nis an automatic rejection"
+      ],
+      "ig_slot": "2026-10-28T15:30:00Z",
+      "tt_slot": "2026-10-28T22:30:00Z",
+      "ig_caption": "applied everywhere, and the only reply is an automatic rejection\n\nCold applying feels close to impossible right now. It's not just you.\nMost people get in through someone they know: 54% of US workers say a connection got them their job. (MyPerfectResume survey, 2025)",
+      "ig_tags": "#jobsearch #jobhunting #careeradvice #hiring",
+      "tt_tease": "applied everywhere and only got an automatic rejection? it's not just you",
+      "tt_tags": "#jobsearch #jobhunting #careeradvice #hiring",
+      "text_y": 260,
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/2q9ox4QVLF.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2g16p37r2p71c2qtxnd6s",
+          "slot": "2026-10-28T15:30:00Z",
+          "audio": {
+            "id": "2111321905883616",
+            "title": "Cejas Perfectas (Perfect Eyebrows) (Reels Sound - Photo Dump)",
+            "artist": "Last Jerónimo"
+          }
+        },
+        "tt": {
+          "id": "cmvr2g25637r3p71cvys3aeu0",
+          "slot": "2026-10-28T22:30:00Z",
+          "music": {
+            "id": "7380249095700432937",
+            "title": "流行 欢快 滑稽",
+            "artist": "Lance",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "wed-b",
+      "format": "carousel",
+      "pillar": "cold vs referrals",
+      "hook_clip": "pixabay-183450.mp4",
+      "hook": "things nobody tells you\nabout applying online",
+      "slides": [
+        {
+          "style": "mistake",
+          "image": "pixabay-1850268.jpg",
+          "overrides": {
+            "heading": {
+              "y": 1160
+            }
+          },
+          "heading": "a job posting is\nthe longest shot",
+          "body": "In a study of 4M+ candidates,\n1 in 152 who applied through\na posting got hired."
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-4606378.jpg",
+          "heading": "a referral changes the odds",
+          "body": "Referred candidates in the same study:\n1 in 16. Almost ten times better."
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-5515150.jpg",
+          "heading": "most jobs come\nthrough people",
+          "body": "54% of US workers say a connection\ngot them their job\n(MyPerfectResume survey, 2025)."
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-9364067.jpg",
+          "heading": "start with people you\nshare something with",
+          "body": "Someone from your school or your old job\nis the easiest first message."
+        }
+      ],
+      "cta_image": "pixabay-3713473.jpg",
+      "tt_slot": "2026-10-28T16:30:00Z",
+      "ig_slot": "2026-10-28T23:30:00Z",
+      "ig_caption": "things nobody tells you about applying online\n\nApplying through a job posting is the longest shot. In Lever's study of 4M+ candidates, 1 in 152 who applied that way got hired, against 1 in 16 for referred candidates. (via SHRM, 2016)\nStart with people you already share something with: your school, your old job.",
+      "ig_tags": "#jobsearch #referrals #networking #jobtips",
+      "tt_tease": "things nobody tells you about applying online",
+      "tt_tags": "#jobsearch #referrals #networking #jobtips",
+      "receipts": {
+        "tt_media": [
+          "https://uploads.postiz.com/SpkyJswwk1.png",
+          "https://uploads.postiz.com/cxWCpHc7pk.png",
+          "https://uploads.postiz.com/WJhSkDDzNx.png",
+          "https://uploads.postiz.com/lbkkSpahtA.png",
+          "https://uploads.postiz.com/lXvaabuibM.png",
+          "https://uploads.postiz.com/aB2h9V0s4L.png"
+        ],
+        "ig_media": [
+          "https://uploads.postiz.com/nJ4SEVPa6M.jpg",
+          "https://uploads.postiz.com/wY2pG4e7qO.jpg",
+          "https://uploads.postiz.com/w3lxePZJra.jpg",
+          "https://uploads.postiz.com/UmcoBeVpSO.jpg",
+          "https://uploads.postiz.com/1FWeDlrCIE.jpg",
+          "https://uploads.postiz.com/hr9xJNRwyB.jpg"
+        ],
+        "tt": {
+          "id": "cmvr2he1l3l2lpi1cbv5hvrq1",
+          "slot": "2026-10-28T16:30:00Z",
+          "music": "autoAddMusic"
+        },
+        "ig": {
+          "id": "cmvr2hf0037s0p71chw1b2min",
+          "slot": "2026-10-28T23:30:00Z"
+        }
+      }
+    },
+    {
+      "id": "thu-a",
+      "format": "reel",
+      "pillar": "cost",
+      "clip": "pixabay-126558.mp4",
+      "lines": [
+        "LinkedIn Premium:\noften $50+ a month",
+        "and still sending\ncold applications",
+        "what you needed was\none person inside"
+      ],
+      "ig_slot": "2026-10-29T15:30:00Z",
+      "tt_slot": "2026-10-29T22:30:00Z",
+      "ig_caption": "paying for Premium and still hearing nothing back\n\nLinkedIn Premium can cost $50+ a month, depending on the plan (prices vary by plan and person).\nBefore paying for more tools, look at how people actually get in: 54% of US workers say a connection got them their job. (MyPerfectResume survey, 2025)",
+      "ig_tags": "#jobsearch #jobhunting #networking #careeradvice",
+      "tt_tease": "paying for Premium and still sending cold applications?",
+      "tt_tags": "#jobsearch #jobhunting #networking #careeradvice",
+      "text_y": 1240,
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/Zy55MoRAR2.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2ii3a37sqp71cy4mku9d1",
+          "slot": "2026-10-29T15:30:00Z",
+          "audio": {
+            "id": "1487945131800342",
+            "title": "Passion Head",
+            "artist": "bbox"
+          }
+        },
+        "tt": {
+          "id": "cmvr2iizs37srp71csjruhq7c",
+          "slot": "2026-10-29T22:30:00Z",
+          "music": {
+            "id": "7316855536216049665",
+            "title": "クッキング・ウォー",
+            "artist": "稿屋 隆",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "thu-b",
+      "format": "reel",
+      "pillar": "reach people",
+      "clip": "pixabay-39836.mp4",
+      "lines": [
+        "nobody tells you the people\nwho can refer you\nwent to your school"
+      ],
+      "tt_slot": "2026-10-29T16:30:00Z",
+      "ig_slot": "2026-10-29T23:30:00Z",
+      "ig_caption": "the easiest person to reach is someone from your school\n\nAlumni at the company you want already share something with you.\nKeep the first note short: what you share, who you are, and one question about how they got in.",
+      "ig_tags": "#newgrad #networking #referrals #jobsearch",
+      "tt_tease": "your school's alumni are the easiest place to start",
+      "tt_tags": "#newgrad #networking #referrals #jobsearch",
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/NQxLtHceh1.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2im593l65pi1c5xc1wbpa",
+          "slot": "2026-10-29T23:30:00Z",
+          "audio": {
+            "id": "4216212318697706",
+            "title": "Nostalgia",
+            "artist": "Alex Blue"
+          }
+        },
+        "tt": {
+          "id": "cmvr2in4837svp71cxuubxbg9",
+          "slot": "2026-10-29T16:30:00Z",
+          "music": {
+            "id": "7658496861292759057",
+            "title": "All Day, All Week (Extended Instrumental)",
+            "artist": "Soul Heads",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fri-a",
+      "format": "reel",
+      "pillar": "how hard",
+      "clip": "pixabay-173333.mp4",
+      "lines": [
+        "you: finally find\nthe perfect job posting",
+        "also you: one of hundreds\napplying to the same one"
+      ],
+      "ig_slot": "2026-10-30T15:30:00Z",
+      "tt_slot": "2026-10-30T22:30:00Z",
+      "ig_caption": "the perfect posting, and hundreds of other people found it too\n\nOnline, you're one application in a stack. Through a person, you're a name someone recognizes.\nIn Lever's study of 4M+ candidates, referred candidates were hired at almost ten times the rate of people applying through a posting. (via SHRM, 2016)",
+      "ig_tags": "#jobsearch #jobhunting #hiring #careeradvice",
+      "tt_tease": "found the perfect job posting... so did everyone else",
+      "tt_tags": "#jobsearch #jobhunting #hiring #careeradvice",
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/9Y6MjHEwIm.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2iqlq3l6ipi1cq1llx8pv",
+          "slot": "2026-10-30T15:30:00Z",
+          "audio": {
+            "id": "927171299575437",
+            "title": "Dime (feat. Balo, Caliph)",
+            "artist": "Company Money"
+          }
+        },
+        "tt": {
+          "id": "cmvr2irm137swp71cd42uutcl",
+          "slot": "2026-10-30T22:30:00Z",
+          "music": {
+            "id": "7457373925942069265",
+            "title": "Polskie Noce - Piosenka dla Polonii w USA",
+            "artist": "Voy Anuszkiewicz",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "fri-b",
+      "format": "carousel",
+      "pillar": "reach people",
+      "hook_clip": "pixabay-38084.mp4",
+      "hook": "what to write to\nsomeone you've never met",
+      "slides": [
+        {
+          "style": "teaching",
+          "image": "pixabay-3544950.jpg",
+          "heading": "line 1: what you share",
+          "body": "\"Hi [name], I saw we both\nwent to [school].\""
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-4009096.jpg",
+          "heading": "line 2: who you are",
+          "body": "\"I'm looking at [role] roles\nat [company].\""
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-4711375.jpg",
+          "overrides": {
+            "heading": {
+              "y": 1240
+            }
+          },
+          "heading": "line 3: one small ask",
+          "body": "\"Would you be open to a quick call\nabout how you got there?\""
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-2583442.jpg",
+          "overrides": {
+            "heading": {
+              "y": 1240
+            }
+          },
+          "heading": "then stop",
+          "body": "Keep it short.\nAsk about their path, not for a job."
+        }
+      ],
+      "cta_image": "pixabay-10505991.jpg",
+      "tt_slot": "2026-10-30T16:30:00Z",
+      "ig_slot": "2026-10-30T23:30:00Z",
+      "ig_caption": "what to write to someone you've never met\n\nThree lines is enough: what you share, who you are, one small ask.\nAsk how they got there, not for a job. A referral can come later, once you've talked.",
+      "ig_tags": "#networking #jobtips #careeradvice #newgrad",
+      "tt_tease": "save this for the next time you message a stranger about a job",
+      "tt_tags": "#networking #jobtips #careeradvice #newgrad",
+      "receipts": {
+        "tt_media": [
+          "https://uploads.postiz.com/cniAxdyVMg.png",
+          "https://uploads.postiz.com/71GON8w8Tj.png",
+          "https://uploads.postiz.com/pPPiJKh59Y.png",
+          "https://uploads.postiz.com/v1Fow4TIix.png",
+          "https://uploads.postiz.com/xNGq6vwBso.png",
+          "https://uploads.postiz.com/oSvtPCv8Kn.png"
+        ],
+        "ig_media": [
+          "https://uploads.postiz.com/LMH08KYb09.jpg",
+          "https://uploads.postiz.com/M6UPSIHHwu.jpg",
+          "https://uploads.postiz.com/8qW4JGi6IE.jpg",
+          "https://uploads.postiz.com/NDbmNmJQz2.jpg",
+          "https://uploads.postiz.com/qqVzUcNank.jpg",
+          "https://uploads.postiz.com/x2FSsYnmP5.jpg"
+        ],
+        "tt": {
+          "id": "cmvr2j92d3l83pi1ctovu3zc5",
+          "slot": "2026-10-30T16:30:00Z",
+          "music": "autoAddMusic"
+        },
+        "ig": {
+          "id": "cmvr2ja3k3l88pi1cpdg6on9j",
+          "slot": "2026-10-30T23:30:00Z"
+        }
+      }
+    },
+    {
+      "id": "sat-a",
+      "format": "reel",
+      "pillar": "how hard",
+      "clip": "pixabay-94680.mp4",
+      "lines": [
+        "the scariest thing\nthis Halloween:\n\"we're moving forward\nwith other candidates\""
+      ],
+      "ig_slot": "2026-10-31T15:30:00Z",
+      "tt_slot": "2026-10-31T22:30:00Z",
+      "ig_caption": "the scariest email this Halloween 🎃\n\n\"We've decided to move forward with other candidates.\" If it keeps landing after every online application, it's not just you.\nApplying through a posting is the longest shot: in Lever's study of 4M+ candidates, 1 in 152 who applied that way got hired. (via SHRM, 2016)",
+      "ig_tags": "#jobsearch #jobhunting #hiring #jobtips",
+      "tt_tease": "the scariest email this Halloween 🎃",
+      "tt_tags": "#jobsearch #jobhunting #hiring #jobtips",
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/ReW22qDeLU.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2jcof37tcp71cvst2g7vr",
+          "slot": "2026-10-31T15:30:00Z",
+          "audio": {
+            "id": "2362029067888663",
+            "title": "Long Distance (Instrumental)",
+            "artist": "Cameron Rasmussen"
+          }
+        },
+        "tt": {
+          "id": "cmvr2jdiv37tdp71cwbxatiok",
+          "slot": "2026-10-31T22:30:00Z",
+          "music": {
+            "id": "7489131565101811713",
+            "title": "Cut Hack",
+            "artist": "Bruno Boe",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "sat-b",
+      "format": "reel",
+      "pillar": "cold vs referrals",
+      "clip": "pixabay-43559.mp4",
+      "lines": [
+        "you: rewriting your resume\nfor one more application",
+        "the person who got the job:\nknew someone on the team",
+        "referred candidates:\nhired almost 10x as often\nas online applicants"
+      ],
+      "tt_slot": "2026-10-31T16:30:00Z",
+      "ig_slot": "2026-10-31T23:30:00Z",
+      "ig_caption": "one more resume rewrite, or one message to someone on the team?\n\nIn Lever's study of 4M+ candidates, referred candidates were hired 1 in 16 times. People applying through a job posting: 1 in 152. Almost ten times the odds. (via SHRM, 2016)",
+      "ig_tags": "#referrals #jobsearch #networking #careeradvice",
+      "tt_tease": "one more resume rewrite, or one message to someone on the team?",
+      "tt_tags": "#referrals #jobsearch #networking #careeradvice",
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/SlQ3jhelA0.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2jgex37tgp71c5fn0wwkc",
+          "slot": "2026-10-31T23:30:00Z",
+          "audio": {
+            "id": "2231509607254062",
+            "title": "Mango Sunrise",
+            "artist": "Summer Islands"
+          }
+        },
+        "tt": {
+          "id": "cmvr2jhc537thp71crdft9npl",
+          "slot": "2026-10-31T16:30:00Z",
+          "music": {
+            "id": "7664670418251188225",
+            "title": "Power Resistance",
+            "artist": "Wbsound",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "sun-a",
+      "format": "reel",
+      "pillar": "how hard",
+      "clip": "pixabay-34258.mp4",
+      "lines": [
+        "POV: you spent hours\non a cover letter\nnobody will read"
+      ],
+      "ig_slot": "2026-11-01T16:30:00Z",
+      "tt_slot": "2026-11-01T23:30:00Z",
+      "ig_caption": "hours on a cover letter, and no one on the other end\n\nTailoring every application takes hours, and you often hear nothing back.\nA short note to someone at the company puts your name in front of an actual person.",
+      "ig_tags": "#jobsearch #jobhunting #jobtips #careerchange",
+      "tt_tease": "hours on a cover letter that nobody reads",
+      "tt_tags": "#jobsearch #jobhunting #jobtips #careerchange",
+      "receipts": {
+        "media": [
+          "https://uploads.postiz.com/PPBZFyOoFh.mp4"
+        ],
+        "ig": {
+          "id": "cmvr2jjsv3l8vpi1c3svw70vq",
+          "slot": "2026-11-01T16:30:00Z",
+          "audio": {
+            "id": "1238595901455072",
+            "title": "Everything",
+            "artist": "Flower Waves"
+          }
+        },
+        "tt": {
+          "id": "cmvr2jkpa3l8ypi1cfg71s7c4",
+          "slot": "2026-11-01T23:30:00Z",
+          "music": {
+            "id": "7524747327119427601",
+            "title": "G-lock",
+            "artist": "LA F",
+            "audio_volume": 60,
+            "video_volume": 0
+          }
+        }
+      }
+    },
+    {
+      "id": "sun-b",
+      "format": "carousel",
+      "pillar": "cost",
+      "hook_clip": "pixabay-3160.mp4",
+      "hook": "what the job search\nactually costs you",
+      "slides": [
+        {
+          "style": "mistake",
+          "image": "pixabay-6881289.jpg",
+          "heading": "a subscription",
+          "body": "LinkedIn Premium can cost $50+ a month,\ndepending on the plan."
+        },
+        {
+          "style": "mistake",
+          "image": "pixabay-1276384.jpg",
+          "heading": "hours of applications",
+          "body": "Every one tailored by hand,\nand you often hear nothing back."
+        },
+        {
+          "style": "teaching",
+          "image": "pixabay-7454951.jpg",
+          "heading": "what moves the needle:\npeople",
+          "body": "54% of US workers say a connection\ngot them their job\n(MyPerfectResume survey, 2025)."
+        }
+      ],
+      "cta_image": "pixabay-4820225.jpg",
+      "tt_slot": "2026-11-01T17:30:00Z",
+      "ig_slot": "2026-11-02T00:30:00Z",
+      "ig_caption": "what the job search actually costs you\n\nA subscription: LinkedIn Premium can cost $50+ a month, depending on the plan (prices vary by plan and person). Hours of tailored applications. And a lot of silence.\nWhat moves the needle is people: 54% of US workers say a connection got them their job. (MyPerfectResume survey, 2025)",
+      "ig_tags": "#jobsearch #careeradvice #jobtips #careerchange",
+      "tt_tease": "what the job search actually costs you",
+      "tt_tags": "#jobsearch #careeradvice #jobtips #careerchange",
+      "receipts": {
+        "tt_media": [
+          "https://uploads.postiz.com/4OQ3yHxAcZ.png",
+          "https://uploads.postiz.com/jtk0ovscKy.png",
+          "https://uploads.postiz.com/fpmF59mtwY.png",
+          "https://uploads.postiz.com/7xo1nvU3YV.png",
+          "https://uploads.postiz.com/QALHiol3zr.png"
+        ],
+        "ig_media": [
+          "https://uploads.postiz.com/9dnvcfh95z.jpg",
+          "https://uploads.postiz.com/yXPgFel2l9.jpg",
+          "https://uploads.postiz.com/gSSzYSSm51.jpg",
+          "https://uploads.postiz.com/9BfWAyFWe0.jpg",
+          "https://uploads.postiz.com/CwGYDWgv44.jpg"
+        ],
+        "tt": {
+          "id": "cmvr2jxse37tup71cmwrovxc5",
+          "slot": "2026-11-01T17:30:00Z",
+          "music": "autoAddMusic"
+        },
+        "ig": {
+          "id": "cmvr2jz153la3pi1cnxkdbtga",
+          "slot": "2026-11-02T00:30:00Z"
+        }
+      }
+    }
+  ]
+}

@@ -39,3 +39,22 @@ Copy this block for each batch:
 - Settings: DIRECT_POST, PUBLIC_TO_EVERYONE, brand_organic_toggle true ("Your brand"), video_made_with_ai false; stored settings confirmed with posts:list
 - Caption: `output/first-post/caption_tiktok.txt`, approved by Thomas in chat
 - State check: (pending; verify it reaches PUBLISHED after the slot)
+
+## 2026-10-28 to 2026-11-01 - Week 1 batch (10 pieces, 20 posts)
+
+- Copy approved by Thomas in chat (2026-10-27). Spec, Postiz IDs, uploads and music per post: `drafts/batches/2026-10-28.json`
+- Daily: piece a = Instagram 11:30 AM then TikTok 6:30 PM; piece b = TikTok 12:30 PM then Instagram 7:30 PM (Sun Nov 1 in EST)
+- Carousels: TikTok gets the 9:16 slides with autoAddMusic; Instagram gets 4:5 centre crops, no music (Postiz attaches audio to Reels only)
+- QA: every frame and slide viewed; text moved off faces (wed-a y 260, thu-a y 1240, three slides y 1160-1240); bright photos swapped for dark ones
+- All 20 read back from posts:list in QUEUE at the right slots; no music repeated
+- State check: (pending; check_post_health.py after each day)
+  - wed-a (reel): IG `cmvr2g16p37r2p71c2qtxnd6s`, TikTok `cmvr2g25637r3p71cvys3aeu0`
+  - wed-b (carousel): IG `cmvr2hf0037s0p71chw1b2min`, TikTok `cmvr2he1l3l2lpi1cbv5hvrq1`
+  - thu-a (reel): IG `cmvr2ii3a37sqp71cy4mku9d1`, TikTok `cmvr2iizs37srp71csjruhq7c`
+  - thu-b (reel): IG `cmvr2im593l65pi1c5xc1wbpa`, TikTok `cmvr2in4837svp71cxuubxbg9`
+  - fri-a (reel): IG `cmvr2iqlq3l6ipi1cq1llx8pv`, TikTok `cmvr2irm137swp71cd42uutcl`
+  - fri-b (carousel): IG `cmvr2ja3k3l88pi1cpdg6on9j`, TikTok `cmvr2j92d3l83pi1ctovu3zc5`
+  - sat-a (reel): IG `cmvr2jcof37tcp71cvst2g7vr`, TikTok `cmvr2jdiv37tdp71cwbxatiok`
+  - sat-b (reel): IG `cmvr2jgex37tgp71c5fn0wwkc`, TikTok `cmvr2jhc537thp71crdft9npl`
+  - sun-a (reel): IG `cmvr2jjsv3l8vpi1c3svw70vq`, TikTok `cmvr2jkpa3l8ypi1cfg71s7c4`
+  - sun-b (carousel): IG `cmvr2jz153la3pi1cnxkdbtga`, TikTok `cmvr2jxse37tup71cmwrovxc5`
