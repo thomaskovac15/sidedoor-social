@@ -28,4 +28,4 @@ Copy this block for each batch:
 - Clip: `pixabay-42305.mp4` (man at a monitor, from behind); audio: Friend Forever (Instrumental), Charlie Peacock (`928037645307668`, random from audioSearch)
 - On screen: "applied on the careers site: / 1 in 152 got hired. / referred: 1 in 16" (Lever via SHRM, 2016); caption approved by Thomas in chat
 - QA notes: frame at 3 s checked: text over the back of the head, no face covered, clear of the app UI
-- State check: (pending; verify it reaches PUBLISHED after the slot)
+- State check: PUBLISHED 15:34Z (4 min after the slot): https://www.instagram.com/reel/DfALt_mnJfr/ . Public embed shows the portrait video, the "Charlie Peacock · Friend Forever (Instrumental)" credit and the full caption.
