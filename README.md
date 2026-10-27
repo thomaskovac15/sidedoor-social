@@ -29,5 +29,5 @@ styles and playbook are the pipeline.
 
 The pipeline began as an MIT-licensed template; its licence is kept in `LICENSE` as that licence requires. The
 look and all content are Sidedoor's. TikTok Sans is under the SIL Open Font License (`fonts/TikTokSans-OFL.txt`).
-Stock footage comes from licences that allow social media marketing use (Mixkit's Stock Video Free License;
-Pexels): no attribution needed, never used to suggest the person shown uses or recommends Sidedoor.
+Stock footage comes from licences that allow social media marketing use (Pixabay Content License, Mixkit Stock Video Free License,
+Pexels License): no attribution needed, never used to suggest the person shown uses or recommends Sidedoor.
