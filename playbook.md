@@ -114,6 +114,13 @@ least one attachment. **Default settings object for a video post:**
   app. Per explicit user decision 2026-07-31, TikTok video posts are silent for
   now rather than solving this by baking in real audio (see Workflow C).
 
+> **Sidedoor:** the paragraph above is out of date for a TikTok Business connection. Its `music` setting attaches a
+> commercial music library track to a **video** post too (confirmed with `postiz integrations:settings` on 2026-10-27).
+> Run `postiz integrations:trigger <tiktok-id> musicSearch -d '{"genre":""}'`, choose at random among tracks at least
+> 30 s long (the list includes 2 s sound effects), and pass
+> `"music":{"id":"<id>","audio_volume":60,"video_volume":0}` (our clips have no sound of their own). Keep
+> `autoAddMusic: "no"` on videos.
+
 Instagram settings: `post_type: "post"` for a feed Reel; `audio` (`{"id":
 "<track id>"}`, found via the `audioSearch` integration tool) attaches a real
 licensed track — this is Instagram-only, TikTok has no equivalent. As of
