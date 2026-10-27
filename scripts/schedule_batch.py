@@ -47,6 +47,27 @@ def create(integration, caption, media, slot, settings) -> str:
     return post.get("postId") or post.get("id") or json.dumps(post)[:200]
 
 
+def captions(p) -> tuple[str, str]:
+    return (f"{p['ig_caption']}\n\n{BRAND}\n{CTA}\n\n{p['ig_tags']}",
+            f"{p['tt_tease']}\n{CTA}\n\n{p['tt_tags']}")
+
+
+def ig_settings(p, audio_id=None) -> dict:
+    if p["format"] != "reel":
+        return {"post_type": "post"}  # Postiz attaches audio to Reels only
+    settings = {"post_type": "post", "audio": {"id": audio_id}}
+    if p.get("ig_trial"):
+        # Trial Reel: shown to non-followers first; Instagram shares it with followers if it performs.
+        settings.update({"is_trial_reel": True, "graduation_strategy": "SS_PERFORMANCE"})
+    return settings
+
+
+def tt_settings(p, music=None) -> dict:
+    if p["format"] != "reel":
+        return {**TT_BASE, "autoAddMusic": "yes", "title": p["tt_tease"][:90]}
+    return {**TT_BASE, "autoAddMusic": "no", "music": music}
+
+
 def main():
     batch = sys.argv[1]
     only = set(sys.argv[2:])
@@ -76,8 +97,7 @@ def main():
             continue
         r = p.setdefault("receipts", {})
         folder = out_root / p["id"]
-        ig_caption = f"{p['ig_caption']}\n\n{BRAND}\n{CTA}\n\n{p['ig_tags']}"
-        tt_caption = f"{p['tt_tease']}\n{CTA}\n\n{p['tt_tags']}"
+        ig_caption, tt_caption = captions(p)
 
         if p["format"] == "reel":
             if "media" not in r:
@@ -86,18 +106,13 @@ def main():
             if "ig" not in r:
                 track = ig_tracks.pop()
                 audio = {"id": track["id"], "title": track.get("title"), "artist": track.get("artist")}
-                settings = {"post_type": "post", "audio": {"id": track["id"]}}
-                if p.get("ig_trial"):
-                    # Trial Reel: shown to non-followers first; Instagram shares it with followers if it performs.
-                    settings.update({"is_trial_reel": True, "graduation_strategy": "SS_PERFORMANCE"})
-                r["ig"] = {"id": create(IG, ig_caption, r["media"], p["ig_slot"], settings),
+                r["ig"] = {"id": create(IG, ig_caption, r["media"], p["ig_slot"], ig_settings(p, track["id"])),
                            "slot": p["ig_slot"], "audio": audio, "trial_reel": bool(p.get("ig_trial"))}
                 save()
             if "tt" not in r:
                 track = tt_tracks.pop()
                 music = {"id": track["id"], "title": track["title"], "artist": track["artist"], "audio_volume": 60, "video_volume": 0}
-                settings = {**TT_BASE, "autoAddMusic": "no", "music": music}
-                r["tt"] = {"id": create(TT, tt_caption, r["media"], p["tt_slot"], settings), "slot": p["tt_slot"], "music": music}
+                r["tt"] = {"id": create(TT, tt_caption, r["media"], p["tt_slot"], tt_settings(p, music)), "slot": p["tt_slot"], "music": music}
                 save()
         else:
             if "tt_media" not in r:
@@ -107,14 +122,14 @@ def main():
                 r["ig_media"] = [upload(s) for s in sorted(folder.glob("ig_slide_*.jpg"))]
                 save()
             if "tt" not in r:
-                settings = {**TT_BASE, "autoAddMusic": "yes", "title": p["tt_tease"][:90]}
-                r["tt"] = {"id": create(TT, tt_caption, r["tt_media"], p["tt_slot"], settings), "slot": p["tt_slot"],
+                r["tt"] = {"id": create(TT, tt_caption, r["tt_media"], p["tt_slot"], tt_settings(p)), "slot": p["tt_slot"],
                            "music": "autoAddMusic"}
                 save()
             if "ig" not in r:
-                r["ig"] = {"id": create(IG, ig_caption, r["ig_media"], p["ig_slot"], {"post_type": "post"}), "slot": p["ig_slot"]}
+                r["ig"] = {"id": create(IG, ig_caption, r["ig_media"], p["ig_slot"], ig_settings(p)), "slot": p["ig_slot"]}
                 save()
         print(p["id"], "ig", r["ig"]["id"], "tt", r["tt"]["id"])
 
 
-main()
+if __name__ == "__main__":
+    main()

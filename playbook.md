@@ -24,6 +24,12 @@ The weekly batch (first run 2026-10-27, `drafts/batches/2026-10-28.json` and `20
    use `autoAddMusic`; Instagram carousels go up without music (Postiz attaches audio to Reels only).
 5. **Verify** with `posts:list` (count, slots, states, no repeated track), add the batch to `drafts/log.md`,
    bump `clips/clips_usage.json`, commit and push. Run `scripts/check_post_health.py` after each posting day.
+6. **Daily check** (Thomas asked for it, 2026-10-27): the desktop app's scheduled task `sidedoor-post-check` runs
+   at about 10:20 PM ET every day while the app is open. It runs the health check, writes each post's result and link
+   into `drafts/log.md`, and dry-runs `scripts/repost_failed.py <post-id>` for anything that failed. That script
+   re-uploads the same render, recreates the post with the same caption and settings at the next time two hours
+   clear of that app's other posts, records the failed id in the receipts and deletes the failed copy. It only
+   does so with `--yes`, which the task passes only after Thomas replies "repost", and it refuses a third attempt.
 
 ## Goal
 
@@ -452,6 +458,7 @@ from its `output/` folder, and recreate it with the same caption and settings
 (step 8 above). Do not rebuild the media — it is not the cause, and all four
 recorded failures republished successfully from the identical bytes. Reposting
 is still a real public API call, so it needs the user's go-ahead like any other.
+Sidedoor: for batch posts, `scripts/repost_failed.py` does these steps (see "Daily check" at the top).
 **This is the TikTok-specific finding** (silent async publish failures, ~1 in
 3 since 2026-08-05) — see the Instagram-specific exception immediately below,
 where identical-bytes retries did *not* work and something had to change.
