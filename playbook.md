@@ -89,11 +89,16 @@ least one attachment. **Default settings object for a video post:**
   "comment": true,
   "autoAddMusic": "no",
   "brand_content_toggle": false,
-  "brand_organic_toggle": false,
+  "brand_organic_toggle": true,
   "video_made_with_ai": false,
   "content_posting_method": "DIRECT_POST"
 }
 ```
+
+> **Sidedoor:** `brand_organic_toggle` is **true** on every TikTok post ("Your brand": TikTok's disclosure for
+> content that promotes your own business). The account is a TikTok Business account, so music comes from TikTok's
+> commercial music library (`musicSearch`, or `autoAddMusic: "yes"` on photo posts). `video_made_with_ai` stays
+> false: the footage is real. Settings confirmed with `postiz integrations:settings` on 2026-10-27.
 - `privacy_level: "PUBLIC_TO_EVERYONE"` — real and immediately visible to
   everyone the moment it publishes. Use `SELF_ONLY` only when the user
   explicitly asks to keep a specific video private.
@@ -372,7 +377,7 @@ to the CTA slide (fixed wording, unaffected).
    is unaffected.
 8. **Settings** — default is **public** (`privacy_level: "PUBLIC_TO_EVERYONE"`),
    matching the "Non-negotiable rules" section above.
-   `{"privacy_level":"PUBLIC_TO_EVERYONE","duet":true,"stitch":true,"comment":true,"autoAddMusic":"yes","brand_content_toggle":false,"brand_organic_toggle":false,"video_made_with_ai":false,"content_posting_method":"DIRECT_POST"}`.
+   `{"privacy_level":"PUBLIC_TO_EVERYONE","duet":true,"stitch":true,"comment":true,"autoAddMusic":"yes","brand_content_toggle":false,"brand_organic_toggle":true,"video_made_with_ai":false,"content_posting_method":"DIRECT_POST"}`.
    Only switch to `"privacy_level":"SELF_ONLY"` if the user explicitly asks
    to go back to private for a specific video. If the user asks for a
    **draft** specifically, that means a real TikTok-native draft —

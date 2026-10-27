@@ -29,14 +29,15 @@ would have posted yourself.
 
 ## Connected Postiz integrations
 
-Filled in on Thomas's personal computer after `postiz integrations:list`. Never post to an integration ID that is
-not in this table.
+From `postiz integrations:list` (2026-10-27). Never post to an integration ID that is not in this table. The X
+account Postiz also shows (@sidedoor_jobs) is not used by this agent.
 
 | Platform | Integration ID | Profile |
 |---|---|---|
-| Instagram | `<from postiz integrations:list>` | `sidedoorjobs` |
-| TikTok | `<from postiz integrations:list>` | `sidedoor.jobs` |
+| Instagram (Facebook Business connection: Reel music works) | `cmvq5a6fv1n4lp71ckmmi3b8t` | `sidedoorjobs` |
+| TikTok (TikTok Business account) | `cmvq5d5fn1n5fp71c5izluj79` | `sidedoor.jobs` |
 | LinkedIn | Not used | Not used |
+| X | Not used | Not used |
 
 ## Posting schedule
 

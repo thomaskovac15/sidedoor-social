@@ -36,7 +36,10 @@ section wins.
    Never repost other creators' videos. AI-generated people or voices only if Thomas switches them on in
    `brand.md`, and then always with each app's AI label turned on (TikTok "AI-generated content",
    Instagram "AI info"), voicing the job seeker's point of view only.
-7. **Never contact the template's upstream:** no forks, stars, issues or pull requests. Pushing to `upstream` is
+7. **Disclosure on TikTok.** Every TikTok post sets `brand_organic_toggle: true` ("Your brand", TikTok's label
+   for content promoting your own business) and `video_made_with_ai: false`. Instagram Reels go out from the
+   brand's own account, which is disclosure enough there.
+8. **Never contact the template's upstream:** no forks, stars, issues or pull requests. Pushing to `upstream` is
    disabled. Don't use referral links from the template.
 
 Fill in before generating anything:
