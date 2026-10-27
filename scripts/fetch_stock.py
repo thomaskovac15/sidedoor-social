@@ -198,8 +198,27 @@ def fetch(args, key: str) -> int:
     return added
 
 
+def reject(names: list[str]) -> None:
+    """Takes items out of rotation for good: deletes the file, drops it from the picker, and keeps its source entry
+    marked rejected so a later fetch never downloads it again."""
+    for name in names:
+        photo = name.lower().endswith((".jpg", ".jpeg", ".png"))
+        folder = PHOTOS if photo else CLIPS
+        sources_path = (PHOTOS.parent if photo else CLIPS) / "sources.json"
+        register_path = PHOTOS.parent / "rotation_positions.json" if photo else CLIPS / "clips_usage.json"
+        sources, register = load(sources_path, {}), load(register_path, {})
+        (folder / name).unlink(missing_ok=True)
+        if name in sources:
+            sources[name]["rejected"] = date.today().isoformat()
+        (register.get("positions") if photo else register.get("counts", {})).pop(name, None)
+        save(sources_path, sources)
+        save(register_path, register)
+        print(f"rejected {name}")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--reject", nargs="+", metavar="FILE", help="Take these files (names in clips/ or photos/rotation/) out of rotation for good")
     parser.add_argument("--source", choices=sorted(SOURCES), default="pixabay")
     parser.add_argument("--query", action="append", help="A search, e.g. \"coffee shop laptop\" (repeatable)")
     parser.add_argument("--preset", action="store_true", help="Also use every query in clips/stock_queries.txt")
@@ -211,6 +230,9 @@ def main():
     parser.add_argument("--max-seconds", type=float, default=30)
     parser.add_argument("--dry-run", action="store_true", help="List what would be downloaded; download nothing")
     args = parser.parse_args()
+    if args.reject:
+        reject(args.reject)
+        return
     key = api_key(SOURCES[args.source]["key"])
     added = fetch(args, key)
     print("Dry run: nothing was downloaded." if args.dry_run else f"Added {added} new item(s).")

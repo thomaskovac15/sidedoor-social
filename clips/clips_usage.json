@@ -1,4 +1,26 @@
 {
   "_note": "Tracks how many times each clips/ video has been used as an Instagram Reels background, least-used-first (scripts/pick_clip.py reads/updates this automatically). SEED THIS BEFORE FIRST USE: add one entry per clip filename you drop into clips/, all starting at 0, e.g. {\"my_clip_a.mov\": 0, \"my_clip_b.mov\": 0}. pick_clip.py calls min() on these counts directly and will crash on an empty dict, so this file can't stay blank once you're ready to render.",
-  "counts": {}
+  "counts": {
+    "pixabay-236256.mp4": 0,
+    "pixabay-183450.mp4": 0,
+    "pixabay-140807.mp4": 0,
+    "pixabay-173333.mp4": 0,
+    "pixabay-39836.mp4": 0,
+    "pixabay-233390.mp4": 0,
+    "pixabay-38084.mp4": 0,
+    "pixabay-43559.mp4": 0,
+    "pixabay-10822.mp4": 0,
+    "pixabay-232538.mp4": 0,
+    "pixabay-83875.mp4": 0,
+    "pixabay-42305.mp4": 0,
+    "pixabay-28236.mp4": 0,
+    "pixabay-94680.mp4": 0,
+    "pixabay-126560.mp4": 0,
+    "pixabay-126558.mp4": 0,
+    "pixabay-27092.mp4": 0,
+    "pixabay-27091.mp4": 0,
+    "pixabay-34258.mp4": 0,
+    "pixabay-4952.mp4": 0,
+    "pixabay-3160.mp4": 0
+  }
 }
