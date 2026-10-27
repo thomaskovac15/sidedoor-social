@@ -4,6 +4,27 @@
 > particular there is no colour rotation, no credibility-led title, and TikTok is active. The dated notes below
 > are the template's history, kept for the commands and QA steps.
 
+## Sidedoor: "make this week's posts"
+
+The weekly batch (first run 2026-10-27, `drafts/batches/2026-10-28.json` and `2026-10-28-extra.json`):
+
+1. **Plan** one spec file per batch in `drafts/batches/<first day>.json`: each piece has its format (`reel`
+   with `lines`, or `carousel` with `hook`, `slides`, `cta_image`), clip or photos, both captions and both slots
+   in UTC (watch the November and March clock changes). Every piece goes to both apps: piece a = Instagram
+   11:30 AM then TikTok 6:30 PM; piece b = TikTok 12:30 PM then Instagram 7:30 PM; an optional piece x = TikTok
+   9:00 PM plus an Instagram Trial Reel (`"ig_trial": true`). No clip or photo twice in one batch.
+2. **Render and look**: `python scripts/build_batch.py <batch> [piece-id ...]` renders every Reel and carousel
+   (plus 4:5 centre crops for Instagram carousels), prints each line's width, and writes `preview.jpg` per piece.
+   View every preview. Move text off faces (`text_y` on a Reel, `overrides` on a slide), swap any photo where
+   white text sits on a bright background, and re-render just that piece.
+3. **Approve**: send the previews and every on-screen line and caption to Thomas; wait for "approved".
+4. **Schedule**: `python scripts/schedule_batch.py <batch>` uploads, picks a random unused track per video
+   (Instagram `audioSearch`; TikTok `musicSearch`, 30 s or longer), creates the posts and writes every Postiz id
+   back into the spec. It skips anything already created, so a rerun after a failure is safe. TikTok carousels
+   use `autoAddMusic`; Instagram carousels go up without music (Postiz attaches audio to Reels only).
+5. **Verify** with `posts:list` (count, slots, states, no repeated track), add the batch to `drafts/log.md`,
+   bump `clips/clips_usage.json`, commit and push. Run `scripts/check_post_health.py` after each posting day.
+
 ## Goal
 
 Create Instagram Reels for **<Your Brand>** (`@<your-handle>`), render and QA

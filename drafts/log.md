@@ -58,3 +58,16 @@ Copy this block for each batch:
   - sat-b (reel): IG `cmvr2jgex37tgp71c5fn0wwkc`, TikTok `cmvr2jhc537thp71crdft9npl`
   - sun-a (reel): IG `cmvr2jjsv3l8vpi1c3svw70vq`, TikTok `cmvr2jkpa3l8ypi1cfg71s7c4`
   - sun-b (carousel): IG `cmvr2jz153la3pi1cnxkdbtga`, TikTok `cmvr2jxse37tup71cmwrovxc5`
+
+## 2026-10-28 to 2026-11-01 - Week 1 extras (5 pieces, 10 posts)
+
+- Copy approved by Thomas in chat (2026-10-27): "post more during the trial". Spec and receipts: `drafts/batches/2026-10-28-extra.json`
+- Daily 9:00 PM ET: TikTok (third of the day) plus the same video as an Instagram Trial Reel (is_trial_reel, graduation SS_PERFORMANCE)
+- QA: thu-x clip swapped to 83875 with text at y 1240; fri-x text at y 1240 (was over the eyes)
+- All 30 posts of the week read back in QUEUE; no track repeated across both batches
+- State check: (pending; check_post_health.py after each day)
+  - wed-x: IG Trial Reel `cmvr3fn9038mkp71cymyed0nz`, TikTok `cmvr3fogt3nippi1c2rrir06m`
+  - thu-x: IG Trial Reel `cmvr3gir638mvp71ccbqq28g9`, TikTok `cmvr3gjtn3nl6pi1csus4nhjw`
+  - fri-x: IG Trial Reel `cmvr3gm5e38mzp71cz7bk4l98`, TikTok `cmvr3gnfm38n1p71cq1wcqilj`
+  - sat-x: IG Trial Reel `cmvr3gviz3nlmpi1crsgalv2g`, TikTok `cmvr3gxn63nlrpi1cona17so5`
+  - sun-x: IG Trial Reel `cmvr3h23638ndp71co0v81vay`, TikTok `cmvr3h3fj38nfp71c65f6qg49`

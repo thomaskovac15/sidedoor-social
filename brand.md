@@ -50,6 +50,7 @@ app's analytics show the followers are online. Never two TikToks within two hour
 | Timezone | `America/New_York` |
 | Instagram slots per day | `11:30 AM, 7:30 PM` |
 | TikTok slots per day | `12:30 PM, 6:30 PM, 9:00 PM` |
+| Instagram Trial Reel (extra, non-followers only) | `9:00 PM` (the 9:00 PM TikTok's video; graduates to followers if it performs) |
 
 ## Topic scope
 
