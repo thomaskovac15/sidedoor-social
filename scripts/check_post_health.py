@@ -16,6 +16,7 @@ Exits 1 if anything needs attention, so it can drive a cron/loop.
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
@@ -28,10 +29,13 @@ LATE_AFTER = timedelta(minutes=40)
 
 
 def fetch_posts(start, end):
+    # Sidedoor: on Windows the npm shim is postiz.cmd, which subprocess only finds through shutil.which.
+    postiz = shutil.which("postiz") or "postiz"
     out = subprocess.run(
-        ["postiz", "posts:list", "--startDate", iso(start), "--endDate", iso(end)],
+        [postiz, "posts:list", "--startDate", iso(start), "--endDate", iso(end)],
         capture_output=True,
         text=True,
+        encoding="utf-8",
         check=True,
     ).stdout
     # The CLI prints a human header line before the JSON body.

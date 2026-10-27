@@ -57,7 +57,7 @@ authenticated on this machine with `postiz auth:login`.
 2. **Upload before attaching media** (Postiz Rule 2). Raw file paths and external
    URLs are rejected by TikTok/LinkedIn. Always:
    ```bash
-   PATH1=$(postiz upload output/<post>/slide_01.png | jq -r '.path')
+   PATH1=$(postiz upload output/<post>/slide_01.png | sed -n '/^{/,$p' | jq -r '.path')
    ```
    then pass `$PATH1` (comma-joined for multiple) to `-m`.
 3. **Don't freelance on voice.** Don't write LinkedIn copy or TikTok scripts from
@@ -366,7 +366,7 @@ to the CTA slide (fixed wording, unaffected).
 6. Upload all slide PNGs, comma-joined, as TikTok's `-m` (a "picture" post,
    not a video):
    ```bash
-   postiz upload output/<name>/slide_01.png | jq -r '.path'
+   postiz upload output/<name>/slide_01.png | sed -n '/^{/,$p' | jq -r '.path'
    ```
    (repeat per slide, then join the returned paths with commas for `-m`).
 7. **Caption is now short** — the teaching content lives on the slides, not
@@ -627,7 +627,7 @@ frame before upload.
    then Read the frame.
 5. Upload the rendered video:
    ```bash
-   postiz upload output/<name>/<name>.mp4 | jq -r '.path'
+   postiz upload output/<name>/<name>.mp4 | sed -n '/^{/,$p' | jq -r '.path'
    ```
 6. Create the Instagram post as a real public Postiz scheduled post. The copy
    was already approved in chat, so no further confirmation is needed here:
