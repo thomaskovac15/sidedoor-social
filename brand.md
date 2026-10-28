@@ -35,7 +35,12 @@ account Postiz also shows (@sidedoor_jobs) is not used by this agent.
 | Platform | Integration ID | Profile |
 |---|---|---|
 | Instagram (Facebook Business connection: Reel music works) | `cmvq5a6fv1n4lp71ckmmi3b8t` | `sidedoorjobs` |
-| TikTok (TikTok Business account) | `cmvq5d5fn1n5fp71c5izluj79` | `sidedoor.jobs` |
+| TikTok (Postiz "tiktok-business" connection; the account itself is personal) | `cmvq5d5fn1n5fp71c5izluj79` | `sidedoor.jobs` |
+
+TikTok posts go to Thomas's TikTok inbox (`content_posting_method: UPLOAD`) and he posts them from the app, with
+the caption copied from the TikTok Captions page (https://claude.ai/artifact/C7TvcWWztGkA3aJkqcQKue). Direct posting
+came back as published but never appeared (2026-10-27). He does not need a TikTok Business account or business
+verification.
 | LinkedIn | Not used | Not used |
 | X | Not used | Not used |
 

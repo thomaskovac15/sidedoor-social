@@ -18,9 +18,12 @@ CLI = [str(NODE_DIR / ("node.exe" if sys.platform == "win32" else "node")),
 IG, TT = "cmvq5a6fv1n4lp71ckmmi3b8t", "cmvq5d5fn1n5fp71c5izluj79"
 BRAND = "Sidedoor finds people at the companies you want and gets their work email, with a draft built on what you have in common."
 CTA = "Start free at sidedoorjobs.app (link in bio)."
+# UPLOAD sends each TikTok to the app's inbox for Thomas to post (caption, hashtags and sound added in the app).
+# DIRECT_POST went through as PUBLISH_COMPLETE on 2026-10-27 but never appeared: @sidedoor.jobs is a personal
+# account, and Postiz posts through TikTok's business API. TikTok ignores the other settings in UPLOAD mode.
 TT_BASE = {"privacy_level": "PUBLIC_TO_EVERYONE", "duet": True, "stitch": True, "comment": True,
            "brand_content_toggle": False, "brand_organic_toggle": True, "video_made_with_ai": False,
-           "content_posting_method": "DIRECT_POST"}
+           "content_posting_method": "UPLOAD"}
 USED_IG_AUDIO = {"928037645307668"}
 USED_TT_MUSIC = {"7542953496217978897"}
 

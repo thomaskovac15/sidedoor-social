@@ -40,6 +40,20 @@ Copy this block for each batch:
 - Caption: `output/first-post/caption_tiktok.txt`, approved by Thomas in chat
 - State check: NOT PUBLIC. Postiz shows PUBLISHED with no error and emailed Thomas that it posted, but TikTok returned no video link (releaseURL is the bare profile URL; releaseId `v_pub_url~v2.7701478547940263949`), `posts:missing` returned nothing, and at 01:10Z Oct 28 the public profile showed 0 videos (account public). Thomas doesn't see it in the app either. Asked him to check the TikTok app's notifications for a review or rejection message. check_post_health.py now flags this case as NOT PUBLIC.
 
+## 2026-10-27 - TikTok switched to inbox drafts
+
+- Cause: the first TikTok (direct post) came back PUBLISH_COMPLETE with no public post id and never appeared. TikTok's
+  public profile data lists @sidedoor.jobs as a personal account (commerceUser false), and Postiz cloud posts every
+  TikTok through TikTok's business API. Thomas tried to switch to a Business account and was asked for IRS/EIN
+  documents, so we don't use one.
+- Test: the same video sent with `content_posting_method: UPLOAD` (`cmvrg2awh45w7p71cgualkg96`, 01:40Z) reached his
+  inbox (releaseURL `tiktok.com/messages#v_inbox_url~...`). He added the caption and posted it from the app; the
+  public profile then showed 1 video. The inbox draft arrived without the caption.
+- All 15 week-1 TikToks switched to UPLOAD with `posts:settings` and read back as UPLOAD, QUEUE. TikTok ignores
+  their music settings now; Thomas picks a sound in the app.
+- Captions to paste: TikTok Captions page https://claude.ai/artifact/C7TvcWWztGkA3aJkqcQKue (built by
+  `scripts/tiktok_caption_page.py`). New batches default to UPLOAD (`TT_BASE` in schedule_batch.py).
+
 ## 2026-10-28 to 2026-11-01 - Week 1 batch (10 pieces, 20 posts)
 
 - Copy approved by Thomas in chat (2026-10-27). Spec, Postiz IDs, uploads and music per post: `drafts/batches/2026-10-28.json`

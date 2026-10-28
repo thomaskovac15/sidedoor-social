@@ -65,7 +65,9 @@ def main():
         elif p["state"] == "QUEUE" and now - due > LATE_AFTER:
             late.append((due, p))
         elif (p["state"] == "PUBLISHED" and p["integration"]["providerIdentifier"].startswith("tiktok")
-              and not any(k in (p.get("releaseURL") or "") for k in ("/video/", "/photo/"))):
+              and not any(k in (p.get("releaseURL") or "") for k in ("/video/", "/photo/", "/messages"))):
+            # A releaseURL of tiktok.com/messages#... is an inbox draft (content_posting_method UPLOAD), which is
+            # fine: Thomas posts it from the app.
             # Sidedoor, 2026-10-27: TikTok accepted the upload and Postiz marked it PUBLISHED, but TikTok never
             # returned a public post id (releaseURL stayed the bare profile URL) and the profile showed 0 videos.
             hidden.append((due, p))

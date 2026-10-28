@@ -20,7 +20,10 @@ The weekly batch (first run 2026-10-27, `drafts/batches/2026-10-28.json` and `20
 3. **Approve**: send the previews and every on-screen line and caption to Thomas; wait for "approved".
 4. **Schedule**: `python scripts/schedule_batch.py <batch>` uploads, picks a random unused track per video
    (Instagram `audioSearch`; TikTok `musicSearch`, 30 s or longer), creates the posts and writes every Postiz id
-   back into the spec. It skips anything already created, so a rerun after a failure is safe. TikTok carousels
+   back into the spec. It skips anything already created, so a rerun after a failure is safe. TikToks go out as
+   inbox drafts (`UPLOAD`, see brand.md), so after scheduling run
+   `python scripts/tiktok_caption_page.py <batch> [<batch> ...]` and republish `output/tiktok-captions.html` to the
+   TikTok Captions Artifact (same URL, in brand.md) so Thomas can copy each caption on his phone. TikTok carousels
    use `autoAddMusic`; Instagram carousels go up without music (Postiz attaches audio to Reels only).
 5. **Verify** with `posts:list` (count, slots, states, no repeated track), add the batch to `drafts/log.md`,
    bump `clips/clips_usage.json`, commit and push. Run `scripts/check_post_health.py` after each posting day.
