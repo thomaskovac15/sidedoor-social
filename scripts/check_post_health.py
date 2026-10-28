@@ -57,15 +57,21 @@ def main():
     now = datetime.now(timezone.utc)
     posts = fetch_posts(now - timedelta(days=args.days), now + timedelta(days=1))
 
-    failed, late = [], []
+    failed, late, hidden = [], [], []
     for p in posts:
         due = datetime.fromisoformat(p["publishDate"].replace("Z", "+00:00"))
         if p["state"] == "ERROR":
             failed.append((due, p))
         elif p["state"] == "QUEUE" and now - due > LATE_AFTER:
             late.append((due, p))
+        elif (p["state"] == "PUBLISHED" and p["integration"]["providerIdentifier"].startswith("tiktok")
+              and not any(k in (p.get("releaseURL") or "") for k in ("/video/", "/photo/"))):
+            # Sidedoor, 2026-10-27: TikTok accepted the upload and Postiz marked it PUBLISHED, but TikTok never
+            # returned a public post id (releaseURL stayed the bare profile URL) and the profile showed 0 videos.
+            hidden.append((due, p))
 
-    for label, group in (("FAILED", failed), ("LATE, still in QUEUE", late)):
+    for label, group in (("FAILED", failed), ("LATE, still in QUEUE", late),
+                         ("NOT PUBLIC: PUBLISHED in Postiz, but TikTok gave no video link", hidden)):
         for due, p in sorted(group):
             print(
                 f"{label}: {p['integration']['providerIdentifier']} "
@@ -74,12 +80,13 @@ def main():
             )
 
     checked = len(posts)
-    if not failed and not late:
+    if not failed and not late and not hidden:
         print(f"All clear. {checked} posts checked over the last {args.days} day(s).")
         return 0
 
     print(
-        f"\n{len(failed)} failed, {len(late)} late, out of {checked} checked.\n"
+        f"\n{len(failed)} failed, {len(late)} late, {len(hidden)} not public, out of {checked} checked.\n"
+        "Don't repost a NOT PUBLIC one: it may still be in TikTok's review and a repost could duplicate it.\n"
         "Postiz will not retry these on its own. To recover one: delete it, "
         "re-upload the rendered media from its output/ folder, and recreate it "
         "with the same caption and settings (playbook.md Workflow B step 8)."
