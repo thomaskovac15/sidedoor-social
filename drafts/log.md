@@ -38,7 +38,7 @@ Copy this block for each batch:
 - Music: O Peso do Amor Calado, Alexandro Bezerra de Araujo (`7542953496217978897`, random from musicSearch among tracks of 30 s or more), audio_volume 60, video_volume 0
 - Settings: DIRECT_POST, PUBLIC_TO_EVERYONE, brand_organic_toggle true ("Your brand"), video_made_with_ai false; stored settings confirmed with posts:list
 - Caption: `output/first-post/caption_tiktok.txt`, approved by Thomas in chat
-- State check: NOT PUBLIC. Postiz shows PUBLISHED with no error and emailed Thomas that it posted, but TikTok returned no video link (releaseURL is the bare profile URL; releaseId `v_pub_url~v2.7701478547940263949`), `posts:missing` returned nothing, and at 01:10Z Oct 28 the public profile showed 0 videos (account public). Thomas doesn't see it in the app either. Asked him to check the TikTok app's notifications for a review or rejection message. check_post_health.py now flags this case as NOT PUBLIC.
+- State check: NOT PUBLIC. Postiz shows PUBLISHED with no error and emailed Thomas that it posted, but TikTok returned no video link (releaseURL is the bare profile URL; releaseId `v_pub_url~v2.7701478547940263949`), `posts:missing` returned nothing, and at 01:10Z Oct 28 the public profile showed 0 videos (account public). Thomas doesn't see it in the app either. Asked him to check the TikTok app's notifications for a review or rejection message. check_post_health.py now flags this case as NOT PUBLIC. Resolved: the same video was re-sent to his inbox (`cmvrg2awh45w7p71cgualkg96`, PUBLISHED 01:40Z Oct 28, inbox delivery) and Thomas posted it from the app.
 
 ## 2026-10-27 - TikTok switched to inbox drafts
 
