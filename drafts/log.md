@@ -62,8 +62,8 @@ Copy this block for each batch:
 - QA: every frame and slide viewed; text moved off faces (wed-a y 260, thu-a y 1240, three slides y 1160-1240); bright photos swapped for dark ones
 - All 20 read back from posts:list in QUEUE at the right slots; no music repeated
 - State check: (pending; check_post_health.py after each day)
-  - wed-a (reel): IG `cmvr2g16p37r2p71c2qtxnd6s`, TikTok `cmvr2g25637r3p71cvys3aeu0`
-  - wed-b (carousel): IG `cmvr2hf0037s0p71chw1b2min`, TikTok `cmvr2he1l3l2lpi1cbv5hvrq1`
+  - wed-a (reel): IG `cmvr2g16p37r2p71c2qtxnd6s`, TikTok `cmvr2g25637r3p71cvys3aeu0` → IG PUBLISHED https://www.instagram.com/reel/DfCwqNUivHV/ ; TikTok sent to inbox
+  - wed-b (carousel): IG `cmvr2hf0037s0p71chw1b2min`, TikTok `cmvr2he1l3l2lpi1cbv5hvrq1` → IG PUBLISHED https://www.instagram.com/p/DfDnd8-jzQK/ ; TikTok sent to inbox
   - thu-a (reel): IG `cmvr2ii3a37sqp71cy4mku9d1`, TikTok `cmvr2iizs37srp71csjruhq7c`
   - thu-b (reel): IG `cmvr2im593l65pi1c5xc1wbpa`, TikTok `cmvr2in4837svp71cxuubxbg9`
   - fri-a (reel): IG `cmvr2iqlq3l6ipi1cq1llx8pv`, TikTok `cmvr2irm137swp71cd42uutcl`
@@ -80,7 +80,7 @@ Copy this block for each batch:
 - QA: thu-x clip swapped to 83875 with text at y 1240; fri-x text at y 1240 (was over the eyes)
 - All 30 posts of the week read back in QUEUE; no track repeated across both batches
 - State check: (pending; check_post_health.py after each day)
-  - wed-x: IG Trial Reel `cmvr3fn9038mkp71cymyed0nz`, TikTok `cmvr3fogt3nippi1c2rrir06m`
+  - wed-x: IG Trial Reel `cmvr3fn9038mkp71cymyed0nz`, TikTok `cmvr3fogt3nippi1c2rrir06m` → IG FAILED (ERROR "This account doesn't support Trial Reels"), not reposted, waiting on Thomas; TikTok sent to inbox
   - thu-x: IG Trial Reel `cmvr3gir638mvp71ccbqq28g9`, TikTok `cmvr3gjtn3nl6pi1csus4nhjw`
   - fri-x: IG Trial Reel `cmvr3gm5e38mzp71cz7bk4l98`, TikTok `cmvr3gnfm38n1p71cq1wcqilj`
   - sat-x: IG Trial Reel `cmvr3gviz3nlmpi1crsgalv2g`, TikTok `cmvr3gxn63nlrpi1cona17so5`
