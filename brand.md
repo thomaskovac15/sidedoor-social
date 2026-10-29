@@ -53,9 +53,11 @@ app's analytics show the followers are online. Never two TikToks within two hour
 | Field | Value |
 |---|---|
 | Timezone | `America/New_York` |
-| Instagram slots per day | `11:30 AM, 7:30 PM` |
-| TikTok slots per day | `12:30 PM, 6:30 PM, 9:00 PM` |
-| Instagram Trial Reel (extra, non-followers only) | `9:00 PM` (the 9:00 PM TikTok's video; graduates to followers if it performs) |
+| Instagram slots per day | `11:30 AM, 7:30 PM, 9:30 PM` (9:30 PM = the 9:00 PM TikTok's video as a normal Reel) |
+| TikTok slots per day | `12:30 PM, 6:30 PM, 9:00 PM` (inbox drafts Thomas posts from the app) |
+
+Trial Reels are not available on @sidedoorjobs (Instagram error "This account doesn't support Trial Reels",
+2026-10-28), so never set `ig_trial`.
 
 ## Topic scope
 

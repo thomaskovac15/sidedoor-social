@@ -12,7 +12,8 @@ The weekly batch (first run 2026-10-27, `drafts/batches/2026-10-28.json` and `20
    with `lines`, or `carousel` with `hook`, `slides`, `cta_image`), clip or photos, both captions and both slots
    in UTC (watch the November and March clock changes). Every piece goes to both apps: piece a = Instagram
    11:30 AM then TikTok 6:30 PM; piece b = TikTok 12:30 PM then Instagram 7:30 PM; an optional piece x = TikTok
-   9:00 PM plus an Instagram Trial Reel (`"ig_trial": true`). No clip or photo twice in one batch.
+   9:00 PM plus the same video as a normal Instagram Reel at 9:30 PM (Trial Reels aren't available on this account;
+   never set `"ig_trial"`). No clip or photo twice in one batch.
 2. **Render and look**: `python scripts/build_batch.py <batch> [piece-id ...]` renders every Reel and carousel
    (plus 4:5 centre crops for Instagram carousels), prints each line's width, and writes `preview.jpg` per piece.
    View every preview. Move text off faces (`text_y` on a Reel, `overrides` on a slide), swap any photo where

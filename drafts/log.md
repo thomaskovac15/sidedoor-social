@@ -85,3 +85,11 @@ Copy this block for each batch:
   - fri-x: IG Trial Reel `cmvr3gm5e38mzp71cz7bk4l98`, TikTok `cmvr3gnfm38n1p71cq1wcqilj`
   - sat-x: IG Trial Reel `cmvr3gviz3nlmpi1crsgalv2g`, TikTok `cmvr3gxn63nlrpi1cona17so5`
   - sun-x: IG Trial Reel `cmvr3h23638ndp71co0v81vay`, TikTok `cmvr3h3fj38nfp71c65f6qg49`
+- 2026-10-29: Instagram doesn't offer Trial Reels to @sidedoorjobs yet. Approved by Thomas: all five became normal Reels
+  (same video, caption and audio). The old Trial Reel posts were deleted in Postiz; receipts keep them under `replaced`.
+  - wed-x: IG Reel `cmvtot34b2xgvor1cakfhpxxy`, Thu Oct 29 3:00 PM (make-up for the failed one)
+  - thu-x: IG Reel `cmvtotguy2aavpg1cvuxu1svd`, Thu Oct 29 9:30 PM
+  - fri-x: IG Reel `cmvtotk2r2xhtor1cf6md1gsf`, Fri Oct 30 9:30 PM
+  - sat-x: IG Reel `cmvtotnyy2ab9pg1ch99x8xmv`, Sat Oct 31 9:30 PM
+  - sun-x: IG Reel `cmvtott0v2abgpg1crbye9vuh`, Sun Nov 1 9:30 PM EST
+  - Read back: no Trial Reels left; 12 Instagram audio posts, 12 different tracks

@@ -5,13 +5,13 @@
       "id": "wed-x",
       "format": "reel",
       "pillar": "how hard",
-      "ig_trial": true,
+      "ig_trial": false,
       "clip": "pixabay-28236.mp4",
       "lines": [
         "the average job got\n244 applications in 2025\n(and you wonder why\nnobody wrote back)"
       ],
       "tt_slot": "2026-10-29T01:00:00Z",
-      "ig_slot": "2026-10-29T01:00:00Z",
+      "ig_slot": "2026-10-29T19:00:00Z",
       "ig_caption": "244 applications for the average job in 2025\n\nThat's up from roughly 115 in 2022. (Greenhouse, The Hire Standard benchmark report, March 2026: 6,000+ North American companies, 640M applications)\nOne more application joins a bigger pile. One message to a person at the company doesn't.",
       "ig_tags": "#jobsearch #jobhunting #hiring #careeradvice",
       "tt_tease": "244 applications for the average job in 2025 (Greenhouse data)",
@@ -21,14 +21,21 @@
           "https://uploads.postiz.com/ogD9qII7Gm.mp4"
         ],
         "ig": {
-          "id": "cmvr3fn9038mkp71cymyed0nz",
-          "slot": "2026-10-29T01:00:00Z",
+          "id": "cmvtot34b2xgvor1cakfhpxxy",
+          "slot": "2026-10-29T19:00:00Z",
           "audio": {
             "id": "1747726329584061",
             "title": "Static",
             "artist": "Jordan Olmos"
           },
-          "trial_reel": true
+          "trial_reel": false,
+          "replaced": [
+            {
+              "id": "cmvr3fn9038mkp71cymyed0nz",
+              "slot": "2026-10-29T01:00:00Z",
+              "why": "Trial Reels not supported on this account"
+            }
+          ]
         },
         "tt": {
           "id": "cmvr3fogt3nippi1c2rrir06m",
@@ -47,13 +54,13 @@
       "id": "thu-x",
       "format": "reel",
       "pillar": "reach people",
-      "ig_trial": true,
+      "ig_trial": false,
       "clip": "pixabay-83875.mp4",
       "lines": [
         "the job looks perfect.\nyou just don't know\na single person there"
       ],
       "tt_slot": "2026-10-30T01:00:00Z",
-      "ig_slot": "2026-10-30T01:00:00Z",
+      "ig_slot": "2026-10-30T01:30:00Z",
       "ig_caption": "perfect job, zero connections there\n\nYou don't need to know someone already. Alumni from your school and people from your old jobs are enough common ground for a first note.",
       "ig_tags": "#networking #jobsearch #newgrad #careerchange",
       "tt_tease": "perfect job, zero connections there. now what?",
@@ -64,14 +71,21 @@
           "https://uploads.postiz.com/QVeqNUIdZo.mp4"
         ],
         "ig": {
-          "id": "cmvr3gir638mvp71ccbqq28g9",
-          "slot": "2026-10-30T01:00:00Z",
+          "id": "cmvtotguy2aavpg1cvuxu1svd",
+          "slot": "2026-10-30T01:30:00Z",
           "audio": {
             "id": "28342964311973831",
             "title": "Cold Soda Sunsets",
             "artist": "Magnetic Sirens"
           },
-          "trial_reel": true
+          "trial_reel": false,
+          "replaced": [
+            {
+              "id": "cmvr3gir638mvp71ccbqq28g9",
+              "slot": "2026-10-30T01:00:00Z",
+              "why": "Trial Reels not supported on this account"
+            }
+          ]
         },
         "tt": {
           "id": "cmvr3gjtn3nl6pi1csus4nhjw",
@@ -90,7 +104,7 @@
       "id": "fri-x",
       "format": "reel",
       "pillar": "reach people",
-      "ig_trial": true,
+      "ig_trial": false,
       "clip": "pixabay-126560.mp4",
       "lines": [
         "asking a stranger\nfor a referral: awkward",
@@ -98,7 +112,7 @@
         "start with\nthe second one"
       ],
       "tt_slot": "2026-10-31T01:00:00Z",
-      "ig_slot": "2026-10-31T01:00:00Z",
+      "ig_slot": "2026-10-31T01:30:00Z",
       "ig_caption": "how to ask for a referral without asking for one\n\nCold-asking a stranger for a referral feels awful. Ask how they got their job instead: it's an easier message to send and an easier one to answer.\nA referral can come up later, once you've talked.",
       "ig_tags": "#referrals #networking #jobtips #careeradvice",
       "tt_tease": "how to ask for a referral without asking for one",
@@ -109,14 +123,21 @@
           "https://uploads.postiz.com/nJj0VrqDH4.mp4"
         ],
         "ig": {
-          "id": "cmvr3gm5e38mzp71cz7bk4l98",
-          "slot": "2026-10-31T01:00:00Z",
+          "id": "cmvtotk2r2xhtor1cf6md1gsf",
+          "slot": "2026-10-31T01:30:00Z",
           "audio": {
             "id": "1097121042409732",
             "title": "So In Love",
             "artist": "half.cool"
           },
-          "trial_reel": true
+          "trial_reel": false,
+          "replaced": [
+            {
+              "id": "cmvr3gm5e38mzp71cz7bk4l98",
+              "slot": "2026-10-31T01:00:00Z",
+              "why": "Trial Reels not supported on this account"
+            }
+          ]
         },
         "tt": {
           "id": "cmvr3gnfm38n1p71cq1wcqilj",
@@ -135,13 +156,13 @@
       "id": "sat-x",
       "format": "reel",
       "pillar": "how hard",
-      "ig_trial": true,
+      "ig_trial": false,
       "clip": "pixabay-38084.mp4",
       "lines": [
         "POV: you check your email\nafter every application\njust in case"
       ],
       "tt_slot": "2026-11-01T01:00:00Z",
-      "ig_slot": "2026-11-01T01:00:00Z",
+      "ig_slot": "2026-11-01T01:30:00Z",
       "ig_caption": "checking your inbox after every application, just in case\n\nHearing nothing back doesn't mean something's wrong with you. The average job got 244 applications in 2025, up from roughly 115 in 2022. (Greenhouse, The Hire Standard benchmark report, March 2026)",
       "ig_tags": "#jobsearch #jobhunting #jobtips #hiring",
       "tt_tease": "refreshing your inbox after every application? same",
@@ -151,14 +172,21 @@
           "https://uploads.postiz.com/IBxAQwVadP.mp4"
         ],
         "ig": {
-          "id": "cmvr3gviz3nlmpi1crsgalv2g",
-          "slot": "2026-11-01T01:00:00Z",
+          "id": "cmvtotnyy2ab9pg1ch99x8xmv",
+          "slot": "2026-11-01T01:30:00Z",
           "audio": {
             "id": "777217416719707",
             "title": "Siririwerere (feat. R Mixy)",
             "artist": "Afro Sound Machine"
           },
-          "trial_reel": true
+          "trial_reel": false,
+          "replaced": [
+            {
+              "id": "cmvr3gviz3nlmpi1crsgalv2g",
+              "slot": "2026-11-01T01:00:00Z",
+              "why": "Trial Reels not supported on this account"
+            }
+          ]
         },
         "tt": {
           "id": "cmvr3gxn63nlrpi1cona17so5",
@@ -177,14 +205,14 @@
       "id": "sun-x",
       "format": "reel",
       "pillar": "cold vs referrals",
-      "ig_trial": true,
+      "ig_trial": false,
       "clip": "pixabay-4952.mp4",
       "lines": [
         "you: perfecting\nyour resume again",
         "meanwhile one referral\ncan matter more than\na perfect resume"
       ],
       "tt_slot": "2026-11-02T02:00:00Z",
-      "ig_slot": "2026-11-02T02:00:00Z",
+      "ig_slot": "2026-11-02T02:30:00Z",
       "ig_caption": "your resume is fine. you need someone to pass it on\n\nIn Lever's study of 4M+ candidates, referred candidates were hired 1 in 16 times. People applying through a job posting: 1 in 152. (via SHRM, 2016)",
       "ig_tags": "#referrals #jobsearch #networking #careeradvice",
       "tt_tease": "your resume is fine. you need someone to pass it on",
@@ -194,14 +222,21 @@
           "https://uploads.postiz.com/mnAJdl7zIS.mp4"
         ],
         "ig": {
-          "id": "cmvr3h23638ndp71co0v81vay",
-          "slot": "2026-11-02T02:00:00Z",
+          "id": "cmvtott0v2abgpg1crbye9vuh",
+          "slot": "2026-11-02T02:30:00Z",
           "audio": {
             "id": "166078116350922",
             "title": "Kadhal Pookam (Instrumental)",
             "artist": "Jose Franklin"
           },
-          "trial_reel": true
+          "trial_reel": false,
+          "replaced": [
+            {
+              "id": "cmvr3h23638ndp71co0v81vay",
+              "slot": "2026-11-02T02:00:00Z",
+              "why": "Trial Reels not supported on this account"
+            }
+          ]
         },
         "tt": {
           "id": "cmvr3h3fj38nfp71c65f6qg49",
