@@ -68,10 +68,10 @@ Copy this block for each batch:
   - thu-b (reel): IG `cmvr2im593l65pi1c5xc1wbpa`, TikTok `cmvr2in4837svp71cxuubxbg9` → IG PUBLISHED https://www.instagram.com/reel/DfGMXI2DAj4/ ; TikTok sent to inbox
   - fri-a (reel): IG `cmvr2iqlq3l6ipi1cq1llx8pv`, TikTok `cmvr2irm137swp71cd42uutcl` → IG PUBLISHED https://www.instagram.com/reel/DfH6WUYgNXB/ ; TikTok sent to inbox
   - fri-b (carousel): IG `cmvr2ja3k3l88pi1cpdg6on9j`, TikTok `cmvr2j92d3l83pi1ctovu3zc5` → IG PUBLISHED https://www.instagram.com/p/DfIxFtjHROh/ ; TikTok sent to inbox
-  - sat-a (reel): IG `cmvr2jcof37tcp71cvst2g7vr`, TikTok `cmvr2jdiv37tdp71cwbxatiok`
-  - sat-b (reel): IG `cmvr2jgex37tgp71c5fn0wwkc`, TikTok `cmvr2jhc537thp71crdft9npl`
-  - sun-a (reel): IG `cmvr2jjsv3l8vpi1c3svw70vq`, TikTok `cmvr2jkpa3l8ypi1cfg71s7c4`
-  - sun-b (carousel): IG `cmvr2jz153la3pi1cnxkdbtga`, TikTok `cmvr2jxse37tup71cmwrovxc5`
+  - sat-a (reel): IG `cmvr2jcof37tcp71cvst2g7vr`, TikTok `cmvr2jdiv37tdp71cwbxatiok` → IG PUBLISHED https://www.instagram.com/reel/DfKe-qzAk3c/ ; TikTok sent to inbox
+  - sat-b (reel): IG `cmvr2jgex37tgp71c5fn0wwkc`, TikTok `cmvr2jhc537thp71crdft9npl` → IG PUBLISHED https://www.instagram.com/reel/DfLWDp_CE2H/ ; TikTok sent to inbox
+  - sun-a (reel): IG `cmvr2jjsv3l8vpi1c3svw70vq`, TikTok `cmvr2jkpa3l8ypi1cfg71s7c4` → IG PUBLISHED https://www.instagram.com/reel/DfNKlpWjsIn/ ; TikTok still QUEUE (due Sun 6:30 PM EST)
+  - sun-b (carousel): IG `cmvr2jz153la3pi1cnxkdbtga`, TikTok `cmvr2jxse37tup71cmwrovxc5` → TikTok sent to inbox; IG still QUEUE (due Sun 7:30 PM EST)
 
 ## 2026-10-28 to 2026-11-01 - Week 1 extras (5 pieces, 10 posts)
 
@@ -83,13 +83,13 @@ Copy this block for each batch:
   - wed-x: IG Trial Reel `cmvr3fn9038mkp71cymyed0nz`, TikTok `cmvr3fogt3nippi1c2rrir06m` → IG FAILED (ERROR "This account doesn't support Trial Reels"), not reposted, waiting on Thomas; TikTok sent to inbox
   - thu-x: IG Trial Reel `cmvr3gir638mvp71ccbqq28g9`, TikTok `cmvr3gjtn3nl6pi1csus4nhjw` → IG Trial Reel replaced (see below); TikTok sent to inbox
   - fri-x: IG Trial Reel `cmvr3gm5e38mzp71cz7bk4l98`, TikTok `cmvr3gnfm38n1p71cq1wcqilj` → IG Trial Reel replaced (see below); TikTok sent to inbox
-  - sat-x: IG Trial Reel `cmvr3gviz3nlmpi1crsgalv2g`, TikTok `cmvr3gxn63nlrpi1cona17so5`
+  - sat-x: IG Trial Reel `cmvr3gviz3nlmpi1crsgalv2g`, TikTok `cmvr3gxn63nlrpi1cona17so5` → IG Trial Reel replaced (see below); TikTok sent to inbox
   - sun-x: IG Trial Reel `cmvr3h23638ndp71co0v81vay`, TikTok `cmvr3h3fj38nfp71c65f6qg49`
 - 2026-10-29: Instagram doesn't offer Trial Reels to @sidedoorjobs yet. Approved by Thomas: all five became normal Reels
   (same video, caption and audio). The old Trial Reel posts were deleted in Postiz; receipts keep them under `replaced`.
   - wed-x: IG Reel `cmvtot34b2xgvor1cakfhpxxy`, Thu Oct 29 3:00 PM (make-up for the failed one) → IG PUBLISHED https://www.instagram.com/reel/DfFtgdmDdsq/
   - thu-x: IG Reel `cmvtotguy2aavpg1cvuxu1svd`, Thu Oct 29 9:30 PM → IG PUBLISHED https://www.instagram.com/reel/DfGZ-OaFxi7/
   - fri-x: IG Reel `cmvtotk2r2xhtor1cf6md1gsf`, Fri Oct 30 9:30 PM → IG PUBLISHED https://www.instagram.com/reel/DfI-zo7AhFx/
-  - sat-x: IG Reel `cmvtotnyy2ab9pg1ch99x8xmv`, Sat Oct 31 9:30 PM
+  - sat-x: IG Reel `cmvtotnyy2ab9pg1ch99x8xmv`, Sat Oct 31 9:30 PM → IG PUBLISHED https://www.instagram.com/reel/DfLpjhZDcAv/
   - sun-x: IG Reel `cmvtott0v2abgpg1crbye9vuh`, Sun Nov 1 9:30 PM EST
   - Read back: no Trial Reels left; 12 Instagram audio posts, 12 different tracks
